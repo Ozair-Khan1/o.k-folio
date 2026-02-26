@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1772024157|1169949051';
+const CACHE_VERSION = '1772149660|155295269';
 /** @type {string} */
 const CACHE_PREFIX = 'Jolly Roger-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;

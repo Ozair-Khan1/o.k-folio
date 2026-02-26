@@ -18,6 +18,18 @@ body {
 	touch-action: none;
 }
 
+canvas {
+    /* Stops the blue/gray highlight color when you tap */
+    -webkit-tap-highlight-color: transparent; 
+    
+    /* Prevents the browser from trying to select the game like text */
+    -webkit-user-select: none;
+    user-select: none;
+
+    /* Stops the phone from trying to scroll while you play */
+    touch-action: none; 
+}
+
 #canvas {
 	display: block;
 }
@@ -112,7 +124,7 @@ body {
 
 		<script src="Jolly Roger.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"Jolly Roger","experimentalVK":false,"fileSizes":{"Jolly Roger.pck":12204784,"Jolly Roger.wasm":36145869},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"Jolly Roger.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"Jolly Roger","experimentalVK":false,"fileSizes":{"Jolly Roger.pck":12204960,"Jolly Roger.wasm":36145869},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"Jolly Roger.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -215,6 +227,34 @@ const engine = new Engine(GODOT_CONFIG);
 		}, displayFailureNotice);
 	}
 }());
+		const gameCanvas = document.querySelector('canvas');
+			if (gameCanvas) {
+				gameCanvas.addEventListener('touchstart', function(e) {
+				e.preventDefault();
+				const touch = e.touches[0];
+				
+				// 1. Log to confirm it's still firing
+				console.log("Forcing Full Click Sequence...");
+
+				// 2. Function to create events
+				const sendEvent = (type) => {
+					gameCanvas.dispatchEvent(new MouseEvent(type, {
+					clientX: touch.clientX,
+					clientY: touch.clientY,
+					bubbles: true,
+					cancelable: true,
+					view: window,
+					button: 0 // 0 is Left Click
+					}));
+				};
+
+				// 3. Fire the full sequence immediately
+				sendEvent('mousedown');
+				sendEvent('mouseup');
+				sendEvent('click');
+				
+				}, { passive: false });
+			}
 		</script>
 	</body>
 </html>
