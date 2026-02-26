@@ -1,0 +1,203 @@
+* {
+  font-family: Bricolage Grotesque, sans-serif;
+}
+
+/* The Main Wrapper */
+.bento-bg-container {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; 
+  overflow: hidden;
+  background: 
+    radial-gradient(circle at 15% 40%, rgba(120, 75, 160, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 85% 50%, rgba(60, 100, 180, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 20% 10%, rgba(180, 90, 70, 0.25) 0%, transparent 35%),
+    #0b0f1a;
+    background-color: #0b0f1a;
+  pointer-events: none;
+}
+
+.bento-body {
+  position: relative;
+  background: transparent; /* Make this transparent so we see the fixed bg */
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.bento-body::after {
+  right: -150px;
+  bottom: 0;
+}
+
+
+.floating-ball {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #ffffff, #cccccc);
+  border-radius: 50%;
+  top: 200px;
+  left: 50px;
+  box-shadow: 
+  0 20px 40px rgba(2, 1, 1, 0.5),
+  inset -10px -10px 20px rgba(0, 0, 0, 0.3),
+  inset 10px 10px 20px rgba(8, 1, 1, 0.315);
+  pointer-events: auto;
+  z-index: 3 !important;
+}
+
+.floating-ball2 {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #ffffff, #cccccc);
+  border-radius: 50%;
+  top: 500px;
+  right: 100px;
+  box-shadow: 
+  0 20px 40px rgba(2, 1, 1, 0.5),
+  inset -10px -10px 20px rgba(0, 0, 0, 0.3),
+  inset 10px 10px 20px rgba(8, 1, 1, 0.315);
+  pointer-events: auto;
+  z-index: 3 !important;
+}
+
+@media screen and (max-width : 1734px) {
+  .floating-ball {
+    z-index: 0 !important;
+  }
+  
+  .floating-ball2 {
+    z-index: 0 !important;
+  }
+}
+
+
+.navbar-mg {
+  margin-top: 20px;
+  backdrop-filter: blur(16px);
+}
+
+.Home-mg {
+  margin-top: 20px;
+}
+
+
+.all-tag {
+  border-bottom: 1px solid #576076;
+}
+
+.img-btn {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+  transform: translate(-35%);
+}
+.img-btn-2 {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+  transform: translate(-35%);
+}
+
+
+.icon-color {
+  color: white !important;
+}
+
+.context-card {
+  height: unset;
+}
+
+.info-text {
+  width: 550px;
+}
+
+@media screen and (max-width : 1399px) {
+  .info-text {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width : 990px) {
+  .info-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 298px) {
+  .hire-padding {
+    background-color: transparent !important;
+  }
+}
+
+/* This forces BOTH inputs and textareas to have a transparent label background */
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+    background-color: transparent !important;
+}
+
+/* This ensures the label stays visible (white) against your success/black background */
+.form-floating > label {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+
+.modal {
+    position: sticky;
+    z-index: 9999 !important;
+    height: 100vh !important;
+}
+
+.glass-plate {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  z-index: 2;
+  box-shadow: 
+   0 20px 50px rgba(0, 0, 0, 0.6),*/
+   inset 0 0 20px rgba(255, 255, 255, 0.05);
+  transform: rotate(-5deg);
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.shape-1, .shape-2 {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  filter: blur(30px);
+}
+
+.shape-1 {
+  width: 150px;
+  height: 150px;
+  top: -20px;
+  left: -20px;
+}
+
+.shape-2 {
+  width: 100px;
+  height: 100px;
+  bottom: -10px;
+  right: -10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.bg-card {
+  /* A deep, rich gradient instead of a flat color */
+ background: radial-gradient(circle at center, #1a1c2c 0%, #0a0b10 100%);
+}
