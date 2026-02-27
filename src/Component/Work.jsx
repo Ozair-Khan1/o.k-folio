@@ -26,7 +26,7 @@ export const Work = () => {
     const GameDetails = [
         {
             image : '/assets/Jolly Img.png',
-            link : '/assets/Jolly/Jolly-Roger.html?v=1.2',
+            link : '/assets/Jolly/Jolly-Roger.html?v=1.3',
             title : 'Jolly 2D Pirate Game',
             text : 'Jolly Roger | Godot'
         },
