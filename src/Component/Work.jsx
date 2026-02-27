@@ -26,13 +26,13 @@ export const Work = () => {
     const GameDetails = [
         {
             image : '/assets/Jolly Img.png',
-            link : '/assets/Jolly/Jolly-Roger.html',
+            link : '/assets/Jolly/Jolly-Roger.html?v=1.1',
             title : 'Jolly 2D Pirate Game',
             text : 'Jolly Roger | Godot'
         },
         {
             image : '/assets/Brotato Img.png',
-            link : '/assets/Brotato/Brotato.html',
+            link : '/assets/Brotato/Brotato.html?v=1.1',
             title : 'Brotato 2D Wave Game',
             text : 'Brotato | Godot'
         }
