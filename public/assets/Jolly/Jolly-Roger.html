@@ -124,7 +124,7 @@ canvas {
 
 		<script src="Jolly-Roger.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"Jolly-Roger","experimentalVK":false,"fileSizes":{"Jolly-Roger.pck":12204944,"Jolly-Roger.wasm":36145869},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"Jolly-Roger.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"Jolly-Roger","experimentalVK":false,"fileSizes":{"Jolly-Roger.pck":12204960,"Jolly-Roger.wasm":36145869},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"Jolly-Roger.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -227,39 +227,40 @@ const engine = new Engine(GODOT_CONFIG);
 		}, displayFailureNotice);
 	}
 }());
-					const gameCanvas = document.querySelector('canvas');
-			if (gameCanvas) {
-				gameCanvas.addEventListener('touchstart', function(e) {
-				const touchX = e.touches[0].clientX;
-				const touchY = e.touches[0].clientY;
-				const screenWidth = window.innerWidth;
 
-				// 1. MOVEMENT ZONE (Far Left - 30%)
-				// This covers your Left directional button only.
-				if (touchX < (screenWidth * 0.4)) {
-					console.log("Movement only: No forced click.");
-					return; 
-				}
+		const gameCanvas = document.querySelector('canvas');
+					if (gameCanvas) {
+						gameCanvas.addEventListener('touchstart', function(e) {
+						const touchX = e.touches[0].clientX;
+						const touchY = e.touches[0].clientY;
+						const screenWidth = window.innerWidth;
 
-				// 2. INTERACTION ZONE (Everything else - 70%)
-				// This covers the Right button, Menu buttons, Jump, and Attack.
-				e.preventDefault(); 
-				console.log("Interaction zone: Forcing click for Menu/Combat.");
+						// 1. MOVEMENT ZONE (Far Left - 30%)
+						// This covers your Left directional button only.
+						if (touchX < (screenWidth * 0.4)) {
+							console.log("Movement only: No forced click.");
+							return; 
+						}
 
-				const sendEvent = (type) => {
-					gameCanvas.dispatchEvent(new MouseEvent(type, {
-					clientX: touchX,
-					clientY: touchY,
-					bubbles: true,
-					button: 0 
-					}));
-				};
+						// 2. INTERACTION ZONE (Everything else - 70%)
+						// This covers the Right button, Menu buttons, Jump, and Attack.
+						e.preventDefault(); 
+						console.log("Interaction zone: Forcing click for Menu/Combat.");
 
-				sendEvent('mousedown');
-				sendEvent('mouseup');
-				sendEvent('click');
-				}, { passive: false });
-			}
+						const sendEvent = (type) => {
+							gameCanvas.dispatchEvent(new MouseEvent(type, {
+							clientX: touchX,
+							clientY: touchY,
+							bubbles: true,
+							button: 0 
+							}));
+						};
+
+						sendEvent('mousedown');
+						sendEvent('mouseup');
+						sendEvent('click');
+						}, { passive: false });
+					}
 		</script>
 	</body>
 </html>
