@@ -18,18 +18,6 @@ body {
 	touch-action: none;
 }
 
-canvas {
-    /* Stops the blue/gray highlight color when you tap */
-    -webkit-tap-highlight-color: transparent; 
-    
-    /* Prevents the browser from trying to select the game like text */
-    -webkit-user-select: none;
-    user-select: none;
-
-    /* Stops the phone from trying to scroll while you play */
-    touch-action: none; 
-}
-
 #canvas {
 	display: block;
 }
@@ -128,7 +116,7 @@ canvas {
 
 		<script src="Jolly-Roger.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"Jolly-Roger","experimentalVK":false,"fileSizes":{"Jolly-Roger.pck":12204960,"Jolly-Roger.wasm":36145869},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"Jolly-Roger.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"Jolly-Roger","experimentalVK":false,"fileSizes":{"Jolly-Roger.pck":12205008,"Jolly-Roger.wasm":36145869},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4,"serviceWorker":"Jolly-Roger.service.worker.js"};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -231,6 +219,7 @@ const engine = new Engine(GODOT_CONFIG);
 		}, displayFailureNotice);
 	}
 }());
+
 		const fsBtn = document.getElementById('mobile-fs-btn');
 		fsBtn.addEventListener('click', () => {
 			if (!document.fullscreenElement) {
