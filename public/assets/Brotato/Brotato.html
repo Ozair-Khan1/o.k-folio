@@ -112,6 +112,10 @@ canvas {
 			Your browser does not support the canvas tag.
 		</canvas>
 
+		<button id="mobile-fs-btn" style="position: fixed; top: 10px; left: 10px; z-index: 9999; padding: 12px; background: #0D6EFD; color: white; border: none; border-radius: 8px; font-weight: bold; font-family: sans-serif; cursor: pointer;">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fullscreen-icon lucide-fullscreen"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><rect width="10" height="8" x="7" y="8" rx="1"/></svg>
+		</button>
+
 		<noscript>
 			Your browser does not support JavaScript.
 		</noscript>
@@ -227,6 +231,19 @@ const engine = new Engine(GODOT_CONFIG);
 		}, displayFailureNotice);
 	}
 }());
+
+		const fsBtn = document.getElementById('mobile-fs-btn');
+		fsBtn.addEventListener('click', () => {
+			if (!document.fullscreenElement) {
+				document.documentElement.requestFullscreen().catch(err => {
+				console.error(`Error: ${err.message}`);
+				});
+				fsBtn.style.background = "#6c757d"; // Change color when active
+			} else {
+				document.exitFullscreen();
+				fsBtn.style.background = "#0D6EFD"; // Back to your hex #0D6EFD
+			}
+			});
 
 		const gameCanvas = document.querySelector('canvas');
 			if (gameCanvas) {
