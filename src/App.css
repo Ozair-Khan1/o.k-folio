@@ -46,7 +46,7 @@
   inset -10px -10px 20px rgba(0, 0, 0, 0.3),
   inset 10px 10px 20px rgba(8, 1, 1, 0.315);
   pointer-events: auto;
-  z-index: 3 !important;
+  z-index: -3 !important;
 }
 
 .floating-ball2 {
@@ -62,7 +62,7 @@
   inset -10px -10px 20px rgba(0, 0, 0, 0.3),
   inset 10px 10px 20px rgba(8, 1, 1, 0.315);
   pointer-events: auto;
-  z-index: 3 !important;
+  z-index: -3 !important;
 }
 
 @media screen and (max-width : 1734px) {
@@ -201,3 +201,4 @@
   /* A deep, rich gradient instead of a flat color */
  background: radial-gradient(circle at center, #1a1c2c 0%, #0a0b10 100%);
 }
+

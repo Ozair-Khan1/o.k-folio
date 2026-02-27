@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CounterItem } from "./CounterItem";
+import { animate } from "animejs";
+import { useEffect } from "react";
 
 const MotionLink = motion(Link)
 
@@ -19,6 +21,36 @@ export const About = () => {
                 console.log("failed to copy", err)
             }
         };
+
+        const OzairName = "Ozair Khan";
+        
+            const splitName = OzairName.split("").map((char, index) => (
+            <span key={index} className="name-letter" style={{ display: 'inline-block' }}>
+              {char === " " ? "\u00A0" : char}
+            </span>
+          ));
+        
+          useEffect(() => {
+                animate('.name-letter', {
+                    rotateX: [-90, 0],
+                    translateZ: [100, 0],
+                    opacity: [0, 1],
+                    perspective: [500, 500],
+                    ease: 'out(3)',
+                    duration: 1000,
+                    delay: (el, i) => i * 100
+                });
+            }, []);
+        
+            useEffect(() => {
+            animate('.card', {
+                opacity: [0, 1],
+                scale: [0.85, 1],
+                delay: (el, i) => i * 400,
+                ease: 'outExpo',
+                duration: 2000
+            });
+            }, []);
     return (
         <>
             <div className="mt-4">
@@ -36,7 +68,7 @@ export const About = () => {
                                         </div>
                                     </div>
                                     <div className="card-title mt-4 fs-3 text-white">
-                                        <p className="fw-bold">Ozair Khan 👋</p>
+                                        <p className="fw-bold">{splitName}</p>
                                     </div>
                                     <div className="card-text mt-2 pe-5">
                                         <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">Front End Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
