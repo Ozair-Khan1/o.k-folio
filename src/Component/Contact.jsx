@@ -155,14 +155,14 @@ export const Contact = () => {
                             </div>
                         </motion.div>
                         <div className="col-lg-8">
-                            <div className="card bg-black p-4">
+                            <div className="card bg-black p-4 rounded-4">
                                 <div className="card-body">
                                     <div className="card-title">
                                         <h1 className="text-white">Lets Work <span className="text-primary">Together</span></h1>
                                         <p className="fs-5" style={{color : 'rgba(240, 242, 245, 0.7)'}}>Feel free to reach out for job opportunities, collaborations, or project discussions.</p>
                                     </div>
                                     <div className="contact-area">
-                                        <div className="form-area p-5" style={{backgroundColor : '#0E1018'}}>
+                                        <div className="form-area rounded-4 p-4 p-lg-5 p-xl-5" style={{backgroundColor : '#0E1018'}}>
                                             <form onSubmit={handleSubmit}>
                                                 <div className="row g-4">
                                                     <div className="col-md-6">

@@ -21,6 +21,10 @@ export const Home = () => {
         }
     };
 
+    const openPrime = () => {
+        window.open('https://prime-inspire-clone.vercel.app/', '_blank')
+    }
+
     const skils = [
         {name : 'React', role : 'Front End', year : '2025-Present', icon : '/assets/React-icon.svg.png'},
         {name : 'Godot', role : '2D Game Dev', year : '2025-Present', icon : '/assets/Godot icon.svg'},
@@ -82,7 +86,7 @@ export const Home = () => {
         <>
             <section className="Home-mg">
                 <div className="container p-0">
-                    <div className="row g-5 g-lg-4 g-md-5 g-sm-5 justify-content-center">
+                    <div className="row g-5 g-lg-4 justify-content-center">
                         <motion.div whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} className="col-xl-4 col-md-10 text-break">
                             <div className="card bg-black rounded-4">
                                 <div className="card-body">
@@ -216,9 +220,9 @@ export const Home = () => {
                                             </div>
                                             <div className="col-lg-12 flex-grow-1">
                                                 <motion.div className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{backgroundColor : '#0E1018'}} onMouseEnter={() => setIsHovering(2)} onMouseLeave={() => setIsHovering(0)}>
-                                                    <motion.img whileHover={{scale : 1.1}} transition={{type : 'spring'}} src="/assets/PrimeInspireImg.png" alt="" className="img-fluid h-100 rounded-3" style={{cursor : 'pointer'}}/>
+                                                    <motion.img onClick={openPrime} whileHover={{scale : 1.1}} transition={{type : 'spring'}} src="/assets/PrimeInspireImg.png" alt="" className="img-fluid h-100 rounded-3" style={{cursor : 'pointer'}}/>
                                                 {isHovering === 2 && (
-                                                    <button className="btn img-btn-2 bg-black rounded-pill text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
+                                                    <button onClick={openPrime} className="btn img-btn-2 bg-black rounded-pill text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
                                                 )}
                                                 </motion.div>
                                             </div>
