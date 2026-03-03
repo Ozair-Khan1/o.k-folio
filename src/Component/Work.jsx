@@ -13,7 +13,7 @@ export const Work = () => {
     const websiteDetails = [
         {
             image : '/assets/StarBucksImg.png',
-            link : '',
+            link : 'https://star-bucks-clone-two.vercel.app/',
             title : 'Star Bucks Website Clone',
             text : 'Start Bucks | Front End'
         },

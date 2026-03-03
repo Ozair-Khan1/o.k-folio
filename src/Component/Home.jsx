@@ -25,6 +25,10 @@ export const Home = () => {
         window.open('https://prime-inspire-clone.vercel.app/', '_blank')
     }
 
+    const openStarBucks = () => {
+        window.open('https://star-bucks-clone-two.vercel.app/', '_blank')
+    }
+
     const skils = [
         {name : 'React', role : 'Front End', year : '2025-Present', icon : '/assets/React-icon.svg.png'},
         {name : 'Godot', role : '2D Game Dev', year : '2025-Present', icon : '/assets/Godot icon.svg'},
@@ -211,10 +215,10 @@ export const Home = () => {
                                     <div className="d-flex flex-column flex-grow-1 mt-5">
                                         <div className="row g-4 flex-grow-1">
                                             <div className="col-lg-12 flex-grow-1">
-                                                <motion.div className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{backgroundColor : '#0E1018'}} onMouseEnter={() => setIsHovering(1)} onMouseLeave={() => setIsHovering(0)}>
+                                                <motion.div onClick={openStarBucks} className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{backgroundColor : '#0E1018'}} onMouseEnter={() => setIsHovering(1)} onMouseLeave={() => setIsHovering(0)}>
                                                     <motion.img whileHover={{scale : 1.1}} transition={{type : 'spring'}} src="/assets/StarBucksImg.png" alt="" className="img-fluid h-100 rounded-3" style={{cursor : 'pointer'}}/>
                                                 {isHovering === 1 && (
-                                                    <button className="btn img-btn-2 bg-black rounded-pill text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
+                                                    <button onClick={openStarBucks} className="btn img-btn-2 bg-black rounded-pill text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></button>
                                                 )}
                                                 </motion.div>
                                             </div>
