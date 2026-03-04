@@ -43,7 +43,7 @@ function App() {
         <div className='bento-body'>
          <Outlet/>
          <footer className='d-flex justify-content-center align-items-center mt-2'>
-          <p className='' style={{color : 'rgba(240, 242, 245, 0.7)'}}>@ O.K Folio 2026, Design By <Link to='/' className='text-decoration-none'><span>Ozair Khan</span></Link></p>
+          <p className='' style={{color : 'rgba(240, 242, 245, 0.7)'}}>@ <Link to='/' className='text-decoration-none'style={{color : 'rgba(240, 242, 245, 0.7)'}}>O.K Folio</Link>, Design By <Link to='/' className='text-decoration-none'><span>Ozair Khan</span></Link></p>
         </footer>
         </div>
     </>
