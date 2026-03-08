@@ -168,6 +168,9 @@ export const About = () => {
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
                                                     <img src="/assets/Bootstrap icon.png" alt="Bootstrap" className="rounded-pill" style={{width : '48px', height : '48px'}}/>
                                                 </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
+                                                    <img src="/assets/TypescriptLogo.png" alt="TypeScript" style={{width : '48px', height : '48px'}}/>
+                                                </div>
                                             </div>
                                             <h3 className="text-white mt-5">2D Game Developement</h3>
                                             <div className="items-container d-flex flex-wrap gap-4 mt-4">

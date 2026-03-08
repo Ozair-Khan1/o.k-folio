@@ -30,11 +30,12 @@ export const Home = () => {
     }
 
     const skils = [
-        {name : 'React', role : 'Front End', year : '2025-Present', icon : '/assets/React-icon.svg.png'},
-        {name : 'Godot', role : '2D Game Dev', year : '2025-Present', icon : '/assets/Godot icon.svg'},
-        {name : 'GDevelop', role : 'No Code Game', year : '2025-Present', icon : '/assets/Gdevelop icon.jpg'},
-        {name : 'Bootstrap', role : 'UI Design', year : '2025-Present', icon : '/assets/Bootstrap icon.png'},
-        {name : 'JavaScript', role : 'Logic', year : '2025-Present', icon : '/assets/JavaScript Logo.png' }
+        {name : 'React', role : 'Front End Dev', year : '2024-Present', icon : '/assets/React-icon.svg.png'},
+        {name : 'Godot', role : '2D-Game Dev', year : '2024-Present', icon : '/assets/Godot icon.svg'},
+        {name : 'GDevelop', role : 'No-Code Dev', year : '2024-Present', icon : '/assets/Gdevelop icon.jpg'},
+        {name : 'Bootstrap', role : 'UI-Design', year : '2024-Present', icon : '/assets/Bootstrap icon.png'},
+        {name : 'JavaScript', role : 'Logic', year : '2024-Present', icon : '/assets/JavaScript Logo.png' },
+        {name : 'TypeScript', role : 'Enhanced JS', year : '2024-Present', icon : 'assets/TypescriptLogo.png'}
     ]
 
     const whatIDo = [
