@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-export const WorkItems = ({image, link, title, text}) => {
+export const WorkItems = ({image, link, title, text, overview, techStack, highlight}) => {
 
     return (
         <>
@@ -46,11 +46,16 @@ export const WorkItems = ({image, link, title, text}) => {
                             bottom: 0,
                             left: 0
                         }}
-                        />
+                        /> 
                     </motion.a>
-                        <p style={{color : '#576076'}} className="fw-semibold">{text}</p>
+                            <p style={{color : '#576076'}} className="fw-semibold m-0">{text}</p>
+                            <div className="d-flex flex-column mt-2 gap-2 mb-3 mb-lg-0 mb-xl-0">
+                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Overview: </span>{overview}</p>
+                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Tech Stack: </span>{techStack}</p>
+                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Highlight: </span>{highlight}</p>
+                            </div>
                     </div>
-                    <div className="visit">
+                    <div className="visit w-50 d-inline-flex h-100 justify-content-start justify-content-lg-end justify-content-xl-end">
                         <motion.a href={link} target="_blank" whileHover={{backgroundColor : '#0D6EFD'}} transition={{duration : 0}} className="btn border-0 p-3 text-white" style={{backgroundColor : '#0E1018'}}>Visit Site
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
                         </motion.a>

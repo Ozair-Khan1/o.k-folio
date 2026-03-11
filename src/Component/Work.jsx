@@ -14,14 +14,20 @@ export const Work = () => {
         {
             image : '/assets/StarBucksImg.png',
             link : 'https://star-bucks-clone-two.vercel.app/',
-            title : 'Star Bucks Website Clone',
-            text : 'Start Bucks | Front End'
+            title : 'Starbucks Website Clone',
+            text : 'Starbucks | Front End',
+            overview : 'A visually appealing and responsive website clone of the Starbucks website.',
+            techStack : 'React, Bootstrap, Appwrite.',
+            highlight : "Leveraged React's component architecture for scalable UI development, utilized Bootstrap's grid system for cross-browser responsiveness, and implemented Appwrite for robust backend operations and session management."
         },
         {
             image : '/assets/PrimeInspireImg.png',
             link : 'https://prime-inspire-clone.vercel.app/',
             title : 'Prime Inspire Website Clone',
-            text : 'Prime Inspire | Front End'
+            text : 'Prime Inspire | Front End',
+            overview : 'A comprehensive full-stack recreation of the Prime Inspire platform.',
+            techStack : 'React, Bootstrap, Appwrite',
+            highlight : "Focuses on modern layout strategies and interactive user interfaces using React, with secure backend integration via Appwrite to handle dynamic data."
         }
     ];
 
@@ -30,13 +36,19 @@ export const Work = () => {
             image : '/assets/Jolly Img.png',
             link : '/assets/Jolly/Jolly-Roger.html?v=1.3',
             title : 'Jolly 2D Pirate Game',
-            text : 'Jolly Roger | Godot'
+            text : 'Jolly Roger | Godot',
+            overview : 'A vibrant, 2D pixel-art pirate adventure game built from the ground up.',
+            techStack : 'Godot Engine, GDScript',
+            highlight : "A 2D pixel-art game developed in the Godot Engine. This project highlights my ability to manage complex application states, handle 2D physics, and build interactive, user-friendly main menus and scene transitions outside of traditional web environments."
         },
         {
             image : '/assets/Brotato Img.png',
             link : '/assets/Brotato/Brotato.html?v=1.1',
             title : 'Brotato 2D Wave Game',
-            text : 'Brotato | Godot'
+            text : 'Brotato | Godot',
+            overview : 'A fast-paced, top-down 2D wave survival shooter.',
+            techStack : 'Godot Engine, GDScript',
+            highlight : "A top-down, arena-survival game featuring wave-based combat. Built with Godot, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
         }
     ];
 
@@ -155,14 +167,31 @@ export const Work = () => {
                                         <h2 className="text-white">Web Application <span className="text-primary">Projects</span></h2>
                                         {websiteDetails.map((item, index) => (
                                             <motion.div initial={{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1.5}} className="col-lg-12" key={index}>
-                                                <WorkItems title={item.title} text={item.text} link={item.link} image={item.image} btnText={'Visit Site'}/>
+                                                <WorkItems 
+                                                    title={item.title} 
+                                                    text={item.text} 
+                                                    link={item.link} 
+                                                    image={item.image} 
+                                                    btnText={'Visit Site'}
+                                                    overview={item.overview}
+                                                    techStack={item.techStack}
+                                                    highlight={item.highlight}
+                                                />
                                             </motion.div>
                                         ))}
 
                                         <h2 className="text-white">2D Game <span className="text-primary">Projects</span></h2>
                                         {GameDetails.map((item, index) => (
                                             <motion.div initial={{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1.5}} className="col-lg-12" key={index}>
-                                                <BrotatoGame title={item.title} text={item.text} link={item.link} image={item.image}/>
+                                                <BrotatoGame 
+                                                    title={item.title} 
+                                                    text={item.text} 
+                                                    link={item.link} 
+                                                    image={item.image} 
+                                                    overview={item.overview}
+                                                    techStack={item.techStack}
+                                                    highlight={item.highlight}
+                                                />
                                             </motion.div>
                                         ))}
                                     </div>

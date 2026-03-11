@@ -198,7 +198,12 @@
 }
 
 .bg-card {
-  /* A deep, rich gradient instead of a flat color */
  background: radial-gradient(circle at center, #1a1c2c 0%, #0a0b10 100%);
 }
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+
 

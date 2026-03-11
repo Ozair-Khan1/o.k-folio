@@ -171,7 +171,7 @@ export const Contact = () => {
                                                     <div className="col-md-6">
                                                         <p className="mb-2 text-white fw-bold">Name</p>
                                                         <div className="form-floating">
-                                                            <motion.input type="text" name="name" id="NameInput" placeholder="Name" onChange={handleInput} className={`form-control border-0 text-white bg-black ${error.name ? 'is-invalid' : ''}`}/>
+                                                            <motion.input type="text" name="name" id="NameInput" placeholder="Name" onChange={handleInput} className={`form-control text-white bg-black ${error.name ? 'is-invalid' : ''}`} style={{borderColor: '#003481'}}/>
                                                             <label htmlFor="NameInput" className="form-label text-white">Your Name</label>
                                                             {error.name && (
                                                                 <span className="text-danger">Name Must Be At Least 3 Characters.</span>
@@ -181,7 +181,7 @@ export const Contact = () => {
                                                     <div className="col-md-6">
                                                         <p className="mb-2 text-white fw-bold">Email</p>
                                                         <div className="form-floating">
-                                                            <motion.input type="email" name="email" id="EmailInput" placeholder="Name" onChange={handleInput} className={`form-control border-0 text-white bg-black ${error.email ? 'is-invalid' : ''}`}/>
+                                                            <motion.input type="email" name="email" id="EmailInput" placeholder="Name" onChange={handleInput} className={`form-control text-white bg-black ${error.email ? 'is-invalid' : ''}`} style={{borderColor: '#003481'}}/>
                                                             <label htmlFor="EmailInput" className="form-label text-white">Your Email</label>
                                                             {error.email && (
                                                                 <span className="text-danger">Please Add Your Email</span>
@@ -191,14 +191,14 @@ export const Contact = () => {
                                                     <div className="col-md-6">
                                                         <p className="mb-2 text-white fw-bold">Subject</p>
                                                         <div className="form-floating">
-                                                            <motion.input type="text" id="SubjectInput" placeholder="Name" className="form-control border-0 text-white bg-black"/>
+                                                            <motion.input type="text" id="SubjectInput" placeholder="Name" className="form-control text-white bg-black" style={{borderColor: '#003481'}}/>
                                                             <label htmlFor="SubjectInput" className="form-label text-white">Your Subject</label>
                                                         </div>
                                                     </div>
                                                     <div className="col-md-12">
                                                         <p className="mb-2 text-white fw-bold">Subject</p>
                                                         <div className="form-floating">
-                                                            <textarea id="MessageInput" name="message" placeholder="Your Message Here" onChange={handleInput} className={`form-control bg-black text-white border-0 ${error.message ? 'is-invalid' : ''}`} style={{height : '130px'}}></textarea>
+                                                            <textarea id="MessageInput" name="message" placeholder="Your Message Here" onChange={handleInput} className={`form-control bg-black text-white ${error.message ? 'is-invalid' : ''}`} style={{height : '130px', borderColor: '#003481'}}></textarea>
                                                             <label htmlFor="MessageInput" >Your Message</label>
                                                             {error.message && (
                                                                 <span className="text-danger">Please Write A Bit More!</span>
