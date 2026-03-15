@@ -3,10 +3,12 @@ import { useState } from "react"
 import { Link } from "react-router-dom";
 import { animate } from "animejs";
 import { useEffect } from "react";
+import { div } from "framer-motion/client";
 
 const MotionLink = motion(Link)
 
 export const Home = () => {
+
     const [isCopied, setIsCopied] = useState(false);
     const email = 'ozairk.work@gmail.com';
 
@@ -29,11 +31,20 @@ export const Home = () => {
         window.open('https://star-bucks-clone-two.vercel.app/', '_blank')
     }
 
-    const skils = [
+    const skills = [
+        {name : 'React JS', role : 'Front End Dev', year : '2024-Present', icon : '/assets/React-icon.svg.png'},
+        {name : 'Godot', role : '2D-Game Dev', year : '2024-Present', icon : '/assets/Godot icon.svg'},
+        {name : 'GDevelop', role : 'No-Code Dev', year : '2024-Present', icon : '/assets/Gdevelop icon.jpg'},
+        {name : 'Next JS', role : 'UI-Design', year : '2024-Present', icon : (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>)},
+        {name : 'JavaScript', role : 'Logic', year : '2024-Present', icon : '/assets/JavaScript Logo.png' },
+        {name : 'TypeScript', role : 'Enhanced JS', year : '2024-Present', icon : 'assets/TypescriptLogo.png'}
+    ]
+
+    const duplicateSkills = [
         {name : 'React', role : 'Front End Dev', year : '2024-Present', icon : '/assets/React-icon.svg.png'},
         {name : 'Godot', role : '2D-Game Dev', year : '2024-Present', icon : '/assets/Godot icon.svg'},
         {name : 'GDevelop', role : 'No-Code Dev', year : '2024-Present', icon : '/assets/Gdevelop icon.jpg'},
-        {name : 'Bootstrap', role : 'UI-Design', year : '2024-Present', icon : '/assets/Bootstrap icon.png'},
+        {name : 'Bootstrap', role : 'UI-Design', year : '2024-Present', icon : '/assets/Bootstrap icon.png' },
         {name : 'JavaScript', role : 'Logic', year : '2024-Present', icon : '/assets/JavaScript Logo.png' },
         {name : 'TypeScript', role : 'Enhanced JS', year : '2024-Present', icon : 'assets/TypescriptLogo.png'}
     ]
@@ -56,7 +67,7 @@ export const Home = () => {
     const [isMouse, setIsMouse] = useState(false);
     const [isHovering, setIsHovering] = useState(0);
 
-    const duplicatedSkills = [...skils, ...skils];
+    const duplicatedSkills = [...duplicateSkills, ...duplicateSkills];
 
     const OzairName = "Ozair Khan";
 
@@ -91,8 +102,8 @@ export const Home = () => {
         <>
             <section className="Home-mg">
                 <div className="container p-0">
-                    <div className="row g-5 g-lg-4 justify-content-center">
-                        <motion.div whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} className="col-xl-4 col-md-10 text-break">
+                    <div className="row g-5 g-lg-4 px-0 justify-content-center">
+                        <motion.div whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} transition={{duration : 1, type : 'spring'}} className="col-xl-4 col-md-10 text-break">
                             <div className="card bg-black rounded-4">
                                 <div className="card-body">
                                     <div class="card-header border-0 p-5 rounded-top position-relative overflow-hidden bg-card d-flex align-items-center justify-content-center" style={{height : "320px"}}>
@@ -146,7 +157,7 @@ export const Home = () => {
                         </motion.div>
                         <div className="col-xl-4 col-md-10">
                             <motion.div animate={{opacity : [0, 0.5, 1]}} className="row g-5 g-lg-4 g-xl-4">
-                                <motion.div whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} className="col-lg-12">
+                                <motion.div whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} transition={{duration : 1, type : 'spring'}} className="col-lg-12">
                                     <div className="card rounded-4 border-0 overflow-hidden bg-black " style={{height : '310px'}} onMouseEnter={() => setIsMouse(true)} onMouseLeave={() => setIsMouse(false)}>
                                         <div className="card-body" style={{height : '300px'}}>
                                             <h3 className="card-title text-white fw-bold py-3">Skills</h3>
@@ -177,7 +188,7 @@ export const Home = () => {
                                         </div>
                                     </div>
                                 </motion.div>
-                                <motion.div whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} className="col-lg-12">
+                                <motion.div whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} transition={{duration : 1, type : 'spring'}} className="col-lg-12">
                                     <div className="card border-0 bg-black rounded-4">
                                         <div className="card-body bg-black rounded-4">
                                             <h3 className="card-title text-white fw-bold py-2 m-0 text-center text-lg-start text-xl-start text-md-start">
@@ -185,14 +196,18 @@ export const Home = () => {
                                             </h3>
                                             <div>
                                                 <div className="row g-4 d-flex flex-column flex-xl-row flex-lg-row flex-md-row align-items-center">
-                                                    {skils.map((skill, index) => (
+                                                    {skills.map((skill, index) => (
                                                         <div className="col-xl-4 col-md-6 col-sm-6 col-6" key={index}>
                                                             <div className="text-center">
                                                                 <div className="card-img-top p-0 py-3 rounded-4" style={{backgroundColor : '#0E1018'}}>
-                                                                    <img src={skill.icon} alt="image" className="" style={{height : '34px', width : '34px'}}/>
+                                                                    {typeof skill.icon === 'string' ? (
+                                                                        <img src={skill.icon} alt="image" className="" style={{height : '34px', width : '34px'}}/>
+                                                                    ) : (
+                                                                        skill.icon
+                                                                    )}
                                                                 </div>
                                                                 <div className="card-text text-center">
-                                                                    <h3 className="fs-5 fw-bold py-2" style={{color : '#878d99'}}>{skill.name}</h3>
+                                                                    <h3 className="fs-5 py-2" style={{color : '#878d99'}}>{skill.name}</h3>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -236,7 +251,7 @@ export const Home = () => {
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div animate={{y : [150, 0], opacity : [0, 0.5, 1]}} whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} className="col-xl-8">
+                        <motion.div animate={{y : [150, 0], opacity : [0, 0.5, 1]}} whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} transition={{duration : 1, type : 'spring'}} className="col-xl-8">
                             <div className="card bg-black rounded-4">
                                 <div className="card-body">
                                     <div className="card-title d-flex align-items-center justify-content-between p-2">
@@ -262,7 +277,7 @@ export const Home = () => {
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div animate={{y : [150, 0], opacity : [0, 0.5, 1]}} whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} className="col-xl-4 d-flex flex-grow-1">
+                        <motion.div animate={{y : [150, 0], opacity : [0, 0.5, 1]}} whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} transition={{duration : 1, type : 'spring'}} className="col-xl-4 d-flex flex-grow-1">
                             <div className="card bg-black rounded-4">
                                 <div className="card-body p-4">
                                     <div className="overflow-hidden p-2 rounded-4 mb-3" style={{backgroundColor : '#0E1018'}}>

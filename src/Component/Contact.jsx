@@ -106,7 +106,7 @@ export const Contact = () => {
                 <div className="container p-0">
                     <div className="row g-4 justify-content-center">
                         <motion.div animate={{x : [-500, 0], opacity : [0, 0.5, 1]}} transition={{duration : 1, type : 'spring'}} whileHover={{scale : 1.03}} whileTap={{scale : 1.03}} className="col-xl-4 col-md-10 text-break">
-                            <div className="card bg-black rounded-4 sticky-top" style={{top : '110px'}}>
+                            <div className="card bg-black rounded-4 sticky-top">
                                 <div className="card-body">
                                     <div class="card-header border-0 p-5 rounded-top position-relative overflow-hidden bg-card d-flex align-items-center justify-content-center" style={{height : "320px"}}>
                                         <div class="shape-1"></div>

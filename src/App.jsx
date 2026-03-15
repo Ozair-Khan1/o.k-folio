@@ -32,7 +32,7 @@ function App() {
   return () => window.removeEventListener('mousemove', handleMouseMove);
 }, []);
   return (
-    <>
+    <div className='mobile-padding'>
         <Navbar/>
         <div ref={orbContainerRef} style={{ position: 'absolute', width: '100%', height: '100%', zIndex: -1 }}>
           <div className="orb floating-ball"/>
@@ -46,7 +46,7 @@ function App() {
           <p className='' style={{color : 'rgba(240, 242, 245, 0.7)'}}>@ <Link to='/' className='text-decoration-none'style={{color : 'rgba(240, 242, 245, 0.7)'}}>O.K Folio</Link>, Design By <Link to='/' className='text-decoration-none'><span>Ozair Khan</span></Link></p>
         </footer>
         </div>
-    </>
+    </div>
   )
 }
 

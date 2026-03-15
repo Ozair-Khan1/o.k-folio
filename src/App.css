@@ -25,11 +25,19 @@
   background: transparent; /* Make this transparent so we see the fixed bg */
   min-height: 100vh;
   z-index: 2;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .bento-body::after {
   right: -150px;
   bottom: 0;
+}
+
+@media screen and (max-width : 576px) {
+  .bento-body {
+    padding:  0px 15px;
+  }
 }
 
 
