@@ -55,7 +55,7 @@ export const Home = () => {
 
     const whatIDo = [
         {
-            image : '/assets/Code.svg.svg', desc : 'MERN Stack Developement'
+            image : '/assets/Code.svg.svg', desc : 'MERN Stack Development'
         },
         {
             image : '/assets/Responsive img.svg', desc : 'Responsive Website Design'
