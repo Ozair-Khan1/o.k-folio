@@ -33,25 +33,29 @@ export const Home = () => {
 
     const skills = [
         {name : 'React JS', role : 'Front End Dev', year : '2024-Present', icon : '/assets/React-icon.svg.png'},
+        {name : 'Next JS', role : 'UI-Design', year : '2024-Present', icon : (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>)},
+        {name : 'Node JS', role : 'Backend Dev', year : '2024-Present', icon : '/assets/nodejs logo.png'},
+        {name : 'Mongo DB', role : 'Database', year : '2024-Present', icon : '/assets/mongoDB logo.png'},
         {name : 'Godot', role : '2D-Game Dev', year : '2024-Present', icon : '/assets/Godot icon.svg'},
         {name : 'GDevelop', role : 'No-Code Dev', year : '2024-Present', icon : '/assets/Gdevelop icon.jpg'},
-        {name : 'Next JS', role : 'UI-Design', year : '2024-Present', icon : (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>)},
-        {name : 'JavaScript', role : 'Logic', year : '2024-Present', icon : '/assets/JavaScript Logo.png' },
-        {name : 'TypeScript', role : 'Enhanced JS', year : '2024-Present', icon : 'assets/TypescriptLogo.png'}
     ]
 
     const duplicateSkills = [
         {name : 'React', role : 'Front End Dev', year : '2024-Present', icon : '/assets/React-icon.svg.png'},
+        {name : 'Next JS', role : 'Front End Dev', year : '2024-Present', icon : (<svg className="img-fluid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>)},
         {name : 'Godot', role : '2D-Game Dev', year : '2024-Present', icon : '/assets/Godot icon.svg'},
         {name : 'GDevelop', role : 'No-Code Dev', year : '2024-Present', icon : '/assets/Gdevelop icon.jpg'},
+        {name : 'Tailwind CSS', role : 'UI-Design', year : '2024-Present', icon : '/assets/tailwind-logo.svg' },
         {name : 'Bootstrap', role : 'UI-Design', year : '2024-Present', icon : '/assets/Bootstrap icon.png' },
-        {name : 'JavaScript', role : 'Logic', year : '2024-Present', icon : '/assets/JavaScript Logo.png' },
+        {name : 'Node JS', role : 'Backend Dev', year : '2024-Present', icon : '/assets/nodejs logo.png' },
+        {name : 'Express', role : 'Server', year : '2024-Present', icon : '/assets/express-logo.png' },
+        {name : 'Mongo DB', role : 'Database', year : '2024-Present', icon : '/assets/mongoDB logo.png' },
         {name : 'TypeScript', role : 'Enhanced JS', year : '2024-Present', icon : 'assets/TypescriptLogo.png'}
     ]
 
     const whatIDo = [
         {
-            image : '/assets/Code.svg.svg', desc : 'Frontend Developement'
+            image : '/assets/Code.svg.svg', desc : 'MERN Stack Developement'
         },
         {
             image : '/assets/Responsive img.svg', desc : 'Responsive Website Design'
@@ -118,7 +122,7 @@ export const Home = () => {
                                         <p className="fw-bold">{splitName}</p>
                                     </div>
                                     <div className="card-text mt-2 pe-5">
-                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">Front End Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                     </div>
                                     <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                         <MotionLink to='/Contact' whileHover={{backgroundColor : "#1A1F2C"}} transition={{duration : 0}} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{backgroundColor : "#0D6EFD"}}>
@@ -172,7 +176,11 @@ export const Home = () => {
                                                                 </div>
                                                                 <div className="ms-md-0 ms-lg-4 ms-xl-5 d-flex gap-2 align-items-center">
                                                                     <div className="p-2 rounded-4" style={{backgroundColor : '#0E1018', height : '44px', width : '44px'}}>
-                                                                         <img src={skill.icon} alt="" className="img-fluid rounded-3" />
+                                                                        {typeof skill.icon === 'string' ? (
+                                                                            <img src={skill.icon} alt="" className="img-fluid rounded-3" />
+                                                                        ) : (
+                                                                            skill.icon
+                                                                        )}
                                                                     </div>
                                                                     <div className="d-flex flex-column">
                                                                     <p className="m-0 fw-bold" style={{color : '#878d99'}}>{skill.name}</p>

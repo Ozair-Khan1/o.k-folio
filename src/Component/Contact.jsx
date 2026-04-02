@@ -120,7 +120,7 @@ export const Contact = () => {
                                         <p className="fw-bold">{splitName}</p>
                                     </div>
                                     <div className="card-text mt-2 pe-5">
-                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">Front End Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                     </div>
                                     <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                         <motion.button whileHover={{backgroundColor : "#0E1018"}} transition={{duration : 0}} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{backgroundColor : "#0D6EFD"}}>

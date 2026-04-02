@@ -15,19 +15,25 @@ export const Work = () => {
             image : '/assets/StarBucksImg.png',
             link : 'https://star-bucks-clone-two.vercel.app/',
             title : 'Starbucks Website Clone',
-            text : 'Starbucks | Front End',
+            text : 'Starbucks | Front End & Back End',
             overview : 'A visually appealing and responsive website clone of the Starbucks website.',
-            techStack : 'React, Bootstrap, Appwrite.',
-            highlight : "Leveraged React's component architecture for scalable UI development, utilized Bootstrap's grid system for cross-browser responsiveness, and implemented Appwrite for robust backend operations and session management."
+            techStack : 'React, Bootstrap, Node.js, Express, MongoDB.',
+            highlight1 : "Re-engineered the application from an Appwrite-managed backend to a custom REST API using Node.js and Express for enhanced server-side control.",
+            highlight2: "Developed a robust authentication system using JWT and HTTP-only cookies with SameSite=None and Secure flags for reliable session management across Vercel deployments.",
+            highlight3: "Built a responsive, component-driven interface with React and Bootstrap, maintaining high performance and cross-device consistency.",
+            highlight4: "Managed user data and persistence using MongoDB and Mongoose, ensuring a scalable and efficient data structure."
         },
         {
             image : '/assets/PrimeInspireImg.png',
             link : 'https://prime-inspire-clone.vercel.app/',
             title : 'Prime Inspire Website Clone',
-            text : 'Prime Inspire | Front End',
+            text : 'Prime Inspire | Front End & Back End',
             overview : 'A comprehensive full-stack recreation of the Prime Inspire platform.',
-            techStack : 'React, Bootstrap, Appwrite',
-            highlight : "Focuses on modern layout strategies and interactive user interfaces using React, with secure backend integration via Appwrite to handle dynamic data."
+            techStack : 'React, Bootstrap, Node.js, Express, MongoDB.',
+            highlight1 : "Re-engineered the application from an Appwrite-managed backend to a custom REST API using Node.js and Express for enhanced server-side control.",
+            highlight2: "Developed a robust authentication system using JWT and HTTP-only cookies with SameSite=None and Secure flags for reliable session management across Vercel deployments.",
+            highlight3: "Built a responsive, component-driven interface with React and Bootstrap, maintaining high performance and cross-device consistency.",
+            highlight4: "Managed user data and persistence using MongoDB and Mongoose, ensuring a scalable and efficient data structure."
         }
     ];
 
@@ -117,7 +123,7 @@ export const Work = () => {
                                         <p className="fw-bold">{splitName}</p>
                                     </div>
                                     <div className="card-text mt-2 pe-5">
-                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">Front End Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                     </div>
                                     <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                         <MotionLink to='/Contact' whileHover={{backgroundColor : "#1A1F2C"}} transition={{duration : 0}} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{backgroundColor : "#0D6EFD"}}>
@@ -160,7 +166,7 @@ export const Work = () => {
                                     <div className="top-info">
                                         <div className="text d-flex flex-column gap-2">
                                             <h1 className="text-white fw-semibold">Check Out My <span className="text-primary">Projects</span></h1>
-                                            <p className="fs-5" style={{color : 'rgba(240, 242, 245, 0.7)'}}>I’m passionate about developing clean, responsive web applications and applying my game development experience to create interactive and engaging user experiences.</p>
+                                            <p className="fs-5" style={{color : 'rgba(240, 242, 245, 0.7)'}}>I am a Web Developer passionate about building robust, end-to-end web applications. I combine my expertise in MERN stack architecture with my game development background to create highly interactive, scalable, and engaging user experiences.</p>
                                         </div>
                                     </div>
                                     <div className="row g-4 mt-2">
@@ -175,7 +181,10 @@ export const Work = () => {
                                                     btnText={'Visit Site'}
                                                     overview={item.overview}
                                                     techStack={item.techStack}
-                                                    highlight={item.highlight}
+                                                    highlight1={item.highlight1}
+                                                    highlight2={item.highlight2}
+                                                    highlight3={item.highlight3}
+                                                    highlight4={item.highlight4}
                                                 />
                                             </motion.div>
                                         ))}

@@ -71,7 +71,7 @@ export const About = () => {
                                         <p className="fw-bold">{splitName}</p>
                                     </div>
                                     <div className="card-text mt-2 pe-5">
-                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">Front End Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                        <p style={{color : "rgba(240, 242, 245, 0.7)"}}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                     </div>
                                     <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                         <MotionLink to='/Contact' whileHover={{backgroundColor : "#1A1F2C"}} transition={{duration : 0}} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{backgroundColor : "#0D6EFD"}}>
@@ -115,7 +115,7 @@ export const About = () => {
                                         <div className="info-text">
                                             <h1 className="main-title text-white fw-bold">Hi, This is <span className="text-primary">Ozair Khan</span>
                                             <br />
-                                            <span className="fs-4">Frontend Developer & Game Developer</span>
+                                            <span className="fs-4">MERN Stack Developer & Game Developer</span>
                                             </h1>
                                             <p className="fw-bold fs-4 text-wrap w-100 m-0" style={{color : '#f0f2f5b3'}}>I’m a passionate developer building interactive <span className="text-white fw-bolder">Games</span> and modern <span className="text-white fw-bolder">Websites</span>. I turn creative ideas into functional digital experiences, focusing on clean code, performance, and user-friendly design.</p>
                                         </div>
@@ -145,7 +145,7 @@ export const About = () => {
                                     <div className="technology-sec mt-5">
                                         <h1 className="m-0 text-white">Technologies I Work With</h1>
                                         <div className="web-sec mt-3">
-                                            <h3 className="text-white mt-4">Front End Development</h3>
+                                            <h3 className="text-white mt-4">Web Development</h3>
                                             <div className="items-container d-flex flex-wrap gap-4 mt-4">
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
                                                     <img src="/assets/Html-Logo-trans-2.png" alt="Html" style={{width : '48px', height : '48px'}}/>
@@ -157,16 +157,28 @@ export const About = () => {
                                                     <img src="/assets/Bootstrap icon.png" alt="Bootstrap" className="rounded-pill" style={{width : '48px', height : '48px'}}/>
                                                 </div>
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
-                                                    <img src="/assets/JavaScript Logo.png" alt="JS" style={{width : '48px', height : '48px'}}/>
-                                                </div>
-                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
-                                                    <img src="/assets/TypescriptLogo.png" alt="TypeScript" style={{width : '48px', height : '48px'}}/>
+                                                    <img src="/assets/tailwind-logo.svg" alt="Bootstrap" className="rounded-pill" style={{width : '48px', height : '48px'}}/>
                                                 </div>
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
                                                     <img src="/assets/React-icon.svg.png" alt="React" style={{width : '48px', height : '48px'}}/>
                                                 </div>
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="55" height="55"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>
+                                                </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
+                                                    <img src="/assets/express logo.svg" alt="Vercel" className="" style={{width : '65px', height : '65px'}}/>
+                                                </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
+                                                    <img src="/assets/mongoDB logo.png" alt="Vercel" className="rounded-pill" style={{width : '48px', height : '48px'}}/>
+                                                </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
+                                                    <img src="/assets/nodejs logo.png" alt="Vercel" className="rounded-pill" style={{width : '48px', height : '48px'}}/>
+                                                </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
+                                                    <img src="/assets/JavaScript Logo.png" alt="JS" style={{width : '48px', height : '48px'}}/>
+                                                </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
+                                                    <img src="/assets/TypescriptLogo.png" alt="TypeScript" style={{width : '48px', height : '48px'}}/>
                                                 </div>
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{width : '80px', height : '80px', backgroundColor : '#0E1018'}}>
                                                     <img src="/assets/Github Logo 3.png" alt="Github" className="rounded-pill" style={{width : '48px', height : '48px'}}/>

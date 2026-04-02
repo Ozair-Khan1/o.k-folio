@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-export const WorkItems = ({image, link, title, text, overview, techStack, highlight}) => {
+export const WorkItems = ({image, link, title, text, overview, techStack, highlight1, highlight2, highlight3, highlight4}) => {
 
     return (
         <>
@@ -52,7 +52,10 @@ export const WorkItems = ({image, link, title, text, overview, techStack, highli
                             <div className="d-flex flex-column mt-2 gap-2 mb-3 mb-lg-0 mb-xl-0">
                                 <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Overview: </span>{overview}</p>
                                 <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Tech Stack: </span>{techStack}</p>
-                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Highlight: </span>{highlight}</p>
+                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Architecture Migration: </span>{highlight1}</p>
+                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Auth & Security: </span>{highlight2}</p>
+                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">UI/UX: </span>{highlight3}</p>
+                                <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Data Modeling: </span>{highlight4}</p>
                             </div>
                     </div>
                     <div className="visit w-50 d-inline-flex h-100 justify-content-start justify-content-lg-end justify-content-xl-end">
