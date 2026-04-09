@@ -15,9 +15,9 @@ export const Work = () => {
             image : '/assets/StarBucksImg.png',
             link : 'https://star-bucks-clone-two.vercel.app/',
             title : 'Starbucks Website Clone',
-            text : 'Starbucks | Front End & Back End',
+            text : 'Starbucks | Full-Stack',
             overview : 'A visually appealing and responsive website clone of the Starbucks website.',
-            techStack : 'React, Bootstrap, Node.js, Express, MongoDB.',
+            techStack : 'React, Tailwind CSS, Node JS, Express, MongoDB.',
             highlight1 : "Re-engineered the application from an Appwrite-managed backend to a custom REST API using Node.js and Express for enhanced server-side control.",
             highlight2: "Developed a robust authentication system using JWT and HTTP-only cookies with SameSite=None and Secure flags for reliable session management across Vercel deployments.",
             highlight3: "Built a responsive, component-driven interface with React and Bootstrap, maintaining high performance and cross-device consistency.",
@@ -27,14 +27,14 @@ export const Work = () => {
             image : '/assets/PrimeInspireImg.png',
             link : 'https://prime-inspire-clone.vercel.app/',
             title : 'Prime Inspire Website Clone',
-            text : 'Prime Inspire | Front End & Back End',
+            text : 'Prime Inspire | Full-Stack',
             overview : 'A comprehensive full-stack recreation of the Prime Inspire platform.',
-            techStack : 'React, Bootstrap, Node.js, Express, MongoDB.',
+            techStack : 'React, Bootstrap, Node JS, Express, MongoDB.',
             highlight1 : "Re-engineered the application from an Appwrite-managed backend to a custom REST API using Node.js and Express for enhanced server-side control.",
             highlight2: "Developed a robust authentication system using JWT and HTTP-only cookies with SameSite=None and Secure flags for reliable session management across Vercel deployments.",
             highlight3: "Built a responsive, component-driven interface with React and Bootstrap, maintaining high performance and cross-device consistency.",
             highlight4: "Managed user data and persistence using MongoDB and Mongoose, ensuring a scalable and efficient data structure."
-        }
+        },
     ];
 
     const GameDetails = [
@@ -55,7 +55,7 @@ export const Work = () => {
             overview : 'A fast-paced, top-down 2D wave survival shooter.',
             techStack : 'Godot Engine, GDScript',
             highlight : "A top-down, arena-survival game featuring wave-based combat. Built with Godot, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
-        }
+        },
     ];
 
 
@@ -171,6 +171,69 @@ export const Work = () => {
                                     </div>
                                     <div className="row g-4 mt-2">
                                         <h2 className="text-white">Web Application <span className="text-primary">Projects</span></h2>
+                                        <motion.div initial={{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1.5}} className="col-lg-12">
+                                                <div className="items">
+                                                    <div className="image">
+                                                        <img src='/assets/Glimpse.png' alt="Image" className="img-fluid rounded-4"/>
+                                                    </div>
+                                                    <div className="text d-flex flex-column flex-lg-row flex-xl-row gap-2 gap-lg-0 gap-xl-0 gap-md-0 justify-content-between p-4">
+                                                        <div className="info d-flex flex-column">
+                                                            <motion.a 
+                                                            href='https://glimpse-pearl.vercel.app/'
+                                                            target="_blank" 
+                                                            className="text-decoration-none fs-4 d-inline-block"
+                                                            initial="rest"
+                                                            whileHover="hover"
+                                                            animate="rest"
+                                                            style={{ 
+                                                            color: 'rgba(240, 242, 245, 0.7)', 
+                                                            position: 'relative',
+                                                            width: 'fit-content'
+                                                            }}
+                                                        >
+                                                            <motion.span
+                                                            variants={{
+                                                                rest: { color: 'rgba(240, 242, 245, 0.7)', x: 0 },
+                                                                hover: { color: '#0D6EFD', x: 5 }
+                                                            }}
+                                                            transition={{ duration: 0.3 }}
+                                                            className="fw-semibold">
+                                                            Glimpse
+                                                            </motion.span>
+
+                                                            <motion.div
+                                                            variants={{
+                                                                rest: { width: "0%" },
+                                                                hover: { width: "100%" }
+                                                            }}
+                                                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                            style={{
+                                                                height: '2px',
+                                                                background: '#0D6EFD',
+                                                                position: 'absolute',
+                                                                bottom: 0,
+                                                                left: 0
+                                                            }}
+                                                            /> 
+                                                        </motion.a>
+                                                                <p style={{color : '#576076'}} className="fw-semibold m-0">Glimpse | Full-Stack Pictures Sharing Platform</p>
+                                                                <div className="d-flex flex-column mt-2 gap-2 mb-3 mb-lg-0 mb-xl-0">
+                                                                    <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Overview: </span>A sophisticated, full-stack social ecosystem built to facilitate seamless visual storytelling. Glimpse enables users to share media, engage with a dynamic community, and experience real-time social interactions through a high-performance, responsive interface.</p>
+                                                                    <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Tech Stack: </span>Next JS, Tailwind CSS, Node JS, Express, MongoDB.</p>
+                                                                    <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Dynamic Content Engine: </span>Developed a multi-format content system supporting permanent posts and ephemeral "Stories," utilizing CSS scroll-snapping and optimized rendering for a fluid user experience.</p>
+                                                                    <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Complex Social Logic: </span>Engineered a scalable backend architecture to manage relational data, including bi-directional follow systems, interactive engagement (likes/comments), and personalized user feeds.</p>
+                                                                    <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">End-to-End Security: </span>Implemented a robust authentication layer using JWT and HTTP-only cookies, ensuring secure session management and cross-origin data protection for cloud-based deployments.</p>
+                                                                    <p className="m-0" style={{color : 'rgba(240, 242, 245, 0.7)'}}><span className="fw-semibold text-white">Adaptive UI/UX: </span>Crafted a "mobile-first" interface using Tailwind CSS, featuring a responsive navigation system and component-driven architecture that maintains high performance across all devices.</p>
+                                                                </div>
+                                                        </div>
+                                                        <div className="visit w-50 d-inline-flex h-100 justify-content-start justify-content-lg-end justify-content-xl-end">
+                                                            <motion.a href='https://glimpse-pearl.vercel.app/' target="_blank" whileHover={{backgroundColor : '#0D6EFD'}} transition={{duration : 0}} className="btn border-0 p-3 text-white text-nowrap" style={{backgroundColor : '#0E1018'}}>Visit Site
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                                                            </motion.a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </motion.div>
                                         {websiteDetails.map((item, index) => (
                                             <motion.div initial={{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1.5}} className="col-lg-12" key={index}>
                                                 <WorkItems 
@@ -188,7 +251,6 @@ export const Work = () => {
                                                 />
                                             </motion.div>
                                         ))}
-
                                         <h2 className="text-white">2D Game <span className="text-primary">Projects</span></h2>
                                         {GameDetails.map((item, index) => (
                                             <motion.div initial={{opacity : 0}} whileInView={{opacity : 1}} transition={{duration : 1.5}} className="col-lg-12" key={index}>
