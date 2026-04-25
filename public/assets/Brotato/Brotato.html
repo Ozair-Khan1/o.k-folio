@@ -250,6 +250,33 @@
 				fsBtn.style.background = "#0D6EFD"; // Back to your hex #0D6EFD
 			}
 		});
+
+		const gameCanvas = document.querySelector('canvas');
+		if (gameCanvas) {
+			gameCanvas.addEventListener('touchstart', function (e) {
+				const touchX = e.touches[0].clientX;
+				const touchY = e.touches[0].clientY;
+				const screenWidth = window.innerWidth;
+
+				// 2. INTERACTION ZONE (Everything else - 70%)
+				// This covers the Right button, Menu buttons, Jump, and Attack.
+				e.preventDefault();
+				console.log("Interaction zone: Forcing click for Menu/Combat.");
+
+				const sendEvent = (type) => {
+					gameCanvas.dispatchEvent(new MouseEvent(type, {
+						clientX: touchX,
+						clientY: touchY,
+						bubbles: true,
+						button: 0
+					}));
+				};
+
+				sendEvent('mousedown');
+				sendEvent('mouseup');
+				sendEvent('click');
+			}, { passive: false });
+		}
 	</script>
 </body>
 
