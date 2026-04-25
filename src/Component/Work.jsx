@@ -49,7 +49,7 @@ export const Work = () => {
         },
         {
             image: '/assets/Brotato Img.png',
-            link: '/assets/Brotato/Brotato.html?v=1.2',
+            link: '/assets/Brotato/Brotato.html?v=1.3',
             title: 'Brotato 2D Wave Game',
             text: 'Brotato | Godot',
             overview: 'A fast-paced, top-down 2D wave survival shooter.',
