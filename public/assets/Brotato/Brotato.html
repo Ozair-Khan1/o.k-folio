@@ -258,11 +258,7 @@
 				const touchY = e.touches[0].clientY;
 				const screenWidth = window.innerWidth;
 
-				// 2. INTERACTION ZONE (Everything else - 70%)
-				// This covers the Right button, Menu buttons, Jump, and Attack.
 				e.preventDefault();
-				console.log("Interaction zone: Forcing click for Menu/Combat.");
-
 				const sendEvent = (type) => {
 					gameCanvas.dispatchEvent(new MouseEvent(type, {
 						clientX: touchX,
