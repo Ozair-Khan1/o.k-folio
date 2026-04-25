@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1772150076|201333086';
+const CACHE_VERSION = '1777112861|514866733';
 /** @type {string} */
 const CACHE_PREFIX = 'Brotato Clone-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;

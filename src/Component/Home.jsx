@@ -3,7 +3,6 @@ import { useState } from "react"
 import { Link } from "react-router-dom";
 import { animate } from "animejs";
 import { useEffect } from "react";
-import { div } from "framer-motion/client";
 
 const MotionLink = motion(Link)
 
