@@ -6,6 +6,8 @@ import { animate } from "animejs";
 export const Contact = () => {
     const formId = import.meta.env.VITE_FORMSPREE_HASH;
 
+    const [loading, setLoading] = useState(false);
+
     const [isCopied, setIsCopied] = useState(false);
     const email = 'ozairk.work@gmail.com';
 
@@ -56,6 +58,8 @@ export const Contact = () => {
             return
         }
 
+        setLoading(true);
+
         const formURL = `https://formspree.io/f/${formId}`
 
         const response = await fetch(formURL, {
@@ -68,6 +72,10 @@ export const Contact = () => {
             setStatus('SUCCESS');
             form.reset();
             setError({ name: false, email: false, message: false })
+            setLoading(false);
+        } else {
+            setStatus('ERROR');
+            setLoading(false);
         }
     }
 
@@ -210,8 +218,12 @@ export const Contact = () => {
                                                         </div>
                                                     </div>
                                                     <div className="col-md-12">
-                                                        <button className="btn btn-primary w-100 d-inline-flex align-items-center justify-content-center">Submit
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1 lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z" /><path d="M6 12h16" /></svg>
+                                                        <button className="btn btn-primary w-100 d-inline-flex align-items-center justify-content-center" disabled={loading}>Submit
+                                                            {loading ?
+                                                                <div class="spinner-border spinner-border-sm text-white mx-2" role="status">
+                                                                    <span class="visually-hidden">Loading...</span>
+                                                                </div>
+                                                                : <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1 lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z" /><path d="M6 12h16" /></svg>}
                                                         </button>
                                                     </div>
                                                 </div>
@@ -223,7 +235,7 @@ export const Contact = () => {
                         </div>
                     </div>
                 </div>
-                {status === 'SUCCESS' && (
+                {status === 'SUCCESS' ? (
                     <motion.div animate={{ y: [-300, 0] }} className={`modal fade mt-0 show ${status === 'SUCCESS' ? 'd-block' : 'd-none'}`} tabIndex='-1' aria-hidden='true' style={{ backdropFilter: 'blur(8px)' }}>
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content bg-black">
@@ -232,6 +244,22 @@ export const Contact = () => {
                                 </div>
                                 <div class="modal-body text-white fs-5">
                                     Thank You For Contacting Me !
+                                </div>
+                                <div class="modal-footer border-0">
+                                    <motion.button whileHover={{ backgroundColor: '#0D6EFD' }} whileTap={{ backgroundColor: '#0D6EFD' }} transition={{ duration: 0 }} type="button" class="btn w-100 text-white fw-bold" style={{ backgroundColor: '#0E1018' }} onClick={() => setStatus('')}>Close</motion.button>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                ) : (
+                    <motion.div animate={{ y: [-300, 0] }} className={`modal fade mt-0 show ${status === 'ERROR' ? 'd-block' : 'd-none'}`} tabIndex='-1' aria-hidden='true' style={{ backdropFilter: 'blur(8px)' }}>
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-black">
+                                <div class="modal-header border-0">
+                                    <h1 class="modal-title fs-2 fw-semibold text-white">O.k <span className="text-primary">Folio</span></h1>
+                                </div>
+                                <div class="modal-body text-white fs-5">
+                                    Sorry, Something went wrong!
                                 </div>
                                 <div class="modal-footer border-0">
                                     <motion.button whileHover={{ backgroundColor: '#0D6EFD' }} whileTap={{ backgroundColor: '#0D6EFD' }} transition={{ duration: 0 }} type="button" class="btn w-100 text-white fw-bold" style={{ backgroundColor: '#0E1018' }} onClick={() => setStatus('')}>Close</motion.button>
