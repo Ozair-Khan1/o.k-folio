@@ -121,7 +121,7 @@ export const Home = () => {
                                         <p className="fw-bold">{splitName}</p>
                                     </div>
                                     <div className="card-text mt-2 pe-5">
-                                        <p className="hero-copy">A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                        <p style={{ color: "rgba(240, 242, 245, 0.7)" }}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                     </div>
                                     <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                         <MotionLink to='/Contact' whileHover={{ backgroundColor: "#1A1F2C" }} transition={{ duration: 0 }} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{ backgroundColor: "#0D6EFD" }}>
@@ -238,30 +238,16 @@ export const Home = () => {
                                     <div className="d-flex flex-column flex-grow-1 mt-5">
                                         <div className="row g-4 flex-grow-1">
                                             <div className="col-lg-12 flex-grow-1">
-                                                <motion.div onClick={openStarBucks} className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0 project-tile" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(1)} onMouseLeave={() => setIsHovering(0)}>
-                                                    <motion.img whileHover={{ scale: 1.08 }} transition={{ type: 'spring' }} src="/assets/StarBucksImg.png" alt="Starbucks clone preview" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
-                                                    <div className="project-overlay"></div>
-                                                    <div className="project-meta">
-                                                        <div>
-                                                            <p className="m-0 text-white fw-semibold">Starbucks Clone</p>
-                                                            <small className="project-tag">Responsive Frontend</small>
-                                                        </div>
-                                                    </div>
+                                                <motion.div onClick={openStarBucks} className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(1)} onMouseLeave={() => setIsHovering(0)}>
+                                                    <motion.img whileHover={{ scale: 1.1 }} transition={{ type: 'spring' }} src="/assets/StarBucksImg.png" alt="" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
                                                     {isHovering === 1 && (
                                                         <button onClick={openStarBucks} className="btn img-btn-2 bg-black rounded-pill text-white project-eye" aria-label="Open Starbucks clone"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></button>
                                                     )}
                                                 </motion.div>
                                             </div>
                                             <div className="col-lg-12 flex-grow-1">
-                                                <motion.div className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0 project-tile" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(2)} onMouseLeave={() => setIsHovering(0)}>
-                                                    <motion.img onClick={openGlimpse} whileHover={{ scale: 1.08 }} transition={{ type: 'spring' }} src="/assets/Glimpse.png" alt="Glimpse project preview" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
-                                                    <div className="project-overlay"></div>
-                                                    <div className="project-meta">
-                                                        <div>
-                                                            <p className="m-0 text-white fw-semibold">Glimpse</p>
-                                                            <small className="project-tag">UI Experience</small>
-                                                        </div>
-                                                    </div>
+                                                <motion.div className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(2)} onMouseLeave={() => setIsHovering(0)}>
+                                                    <motion.img onClick={openGlimpse} whileHover={{ scale: 1.1 }} transition={{ type: 'spring' }} src="/assets/Glimpse.png" alt="" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
                                                     {isHovering === 2 && (
                                                         <button onClick={openGlimpse} className="btn img-btn-2 bg-black rounded-pill text-white project-eye" aria-label="Open Glimpse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></button>
                                                     )}

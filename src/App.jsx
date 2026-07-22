@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { clamp, createAnimatable, utils } from 'animejs'
+import ChatBot from './Component/ChatBot'
 function App() {
   const randomX = [0, 50, 20, 30, 40, 0]
   const orbContainerRef = useRef(null);
@@ -42,6 +43,7 @@ function App() {
       </div>
       <div className='bento-body'>
         <Outlet />
+        <ChatBot />
         <footer className='d-flex justify-content-center align-items-center mt-2'>
           <p className='' style={{ color: 'rgba(240, 242, 245, 0.7)' }}>@ <Link to='/' className='text-decoration-none' style={{ color: 'rgba(240, 242, 245, 0.7)' }}>O.K Folio</Link>, Design By <Link to='/' className='text-decoration-none'><span>Ozair Khan</span></Link></p>
         </footer>
