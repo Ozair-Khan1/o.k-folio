@@ -67,7 +67,7 @@ export const Work = () => {
         },
         {
             image: '/assets/SaveTheCat img.png',
-            link: '/assets/SaveTheCat/index.html',
+            link: '/assets/SaveTheCat/index.html?v=1.2',
             title: 'Save The Cat',
             text: 'Save The Cat | GDevelop',
             overview: 'A 2D physics puzzle game developed in the GDevelop 5 Engine.',
