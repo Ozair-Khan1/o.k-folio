@@ -9,7 +9,7 @@ gdjs.evtsExt__Draw2Physics__CreateAndWledObjects = {};
 gdjs.evtsExt__Draw2Physics__CreateAndWledObjects.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__Draw2Physics__CreateAndWledObjects.userFunc0xe55178 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Draw2Physics__CreateAndWledObjects.userFunc0x1e516c0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 // 0) Read your gdjs.Variable parameters directly
 const storedXPointsVar = eventsFunctionContext.getArgument("Param_StoredXPoints");
@@ -135,7 +135,7 @@ gdjs.evtsExt__Draw2Physics__CreateAndWledObjects.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__Draw2Physics__CreateAndWledObjects.userFunc0xe55178(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Draw2Physics__CreateAndWledObjects.userFunc0x1e516c0(runtimeScene, eventsFunctionContext);
 
 }
 

@@ -61,36 +61,36 @@ export const Work = () => {
             link: '/assets/RoadCross/index.html',
             title: 'ANF Road Crossing Game',
             text: 'ANF Road Cross | GDevelop',
-            overview: 'A fast-paced, top-down 2D wave survival shooter.',
-            techStack: 'GDevelop Engine',
-            highlight: "A top-down, arena-survival game featuring wave-based combat. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+            overview: 'A 3D low-poly arcade game built with the GDevelop 5 Engine.',
+            techStack: 'GDevelop 5 Engine',
+            highlight: "A 3D low-poly arcade game built with the GDevelop 5 Engine. Featuring dynamic traffic AI, responsive player controls, score progression, optimized performance, and polished UI, this project showcases my experience in creating engaging gameplay systems and complete game experiences beyond traditional web development."
         },
         {
             image: '/assets/SaveTheCat img.png',
-            link: '/assets/Save The Cat/index.html',
+            link: '/assets/SaveTheCat/index.html',
             title: 'Save The Cat',
             text: 'Save The Cat | GDevelop',
-            overview: 'A fast-paced, top-down 2D wave survival shooter.',
-            techStack: 'GDevelop Engine',
-            highlight: "A top-down, arena-survival game featuring wave-based combat. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+            overview: 'A 2D physics puzzle game developed in the GDevelop 5 Engine.',
+            techStack: 'GDevelop 5 Engine',
+            highlight: "A 2D physics puzzle game developed in the GDevelop 5 Engine. Featuring a real-time drawing mechanic, physics-based interactions, level progression, and responsive UI, this project highlights my ability to create engaging gameplay systems and polished player experiences beyond traditional web development."
         },
         {
             image: '/assets/ParkingJam img.png',
             link: '/assets/ParkingJam/index.html',
             title: 'Parking Jam',
             text: 'Parking Jam | GDevelop',
-            overview: 'A fast-paced, top-down 2D wave survival shooter.',
-            techStack: 'GDevelop Engine',
-            highlight: "A top-down, arena-survival game featuring wave-based combat. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+            overview: 'A 2D parking puzzle game developed in GDevelop 5 Engine.',
+            techStack: 'GDevelop 5 Engine',
+            highlight: "A 2D parking puzzle game developed in GDevelop. Featuring intuitive drag controls, progressively difficult levels, responsive UI, and optimized gameplay mechanics, this project highlights my experience in creating engaging logic-based puzzle games."
         },
         {
             image: '/assets/TheEscape img.png',
             link: '/assets/TheEscape/index.html',
-            title: 'The Escape',
-            text: 'The Escape | GDevelop',
-            overview: 'A 2D platformer game.',
-            techStack: 'GDevelop Engine',
-            highlight: "A 2D platformer game. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+            title: 'ANF The Escape',
+            text: 'ANF The Escape | GDevelop',
+            overview: 'A 2D platformer developed in GDevelop 5 Engine.',
+            techStack: 'GDevelop 5 Engine',
+            highlight: "A 2D platformer developed in GDevelop. Featuring responsive controls, challenging level design, environmental hazards, collectibles, and smooth gameplay mechanics, this project highlights my experience in building polished platforming experiences."
         },
     ];
 

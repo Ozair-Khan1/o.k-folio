@@ -115,7 +115,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.onCreatedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.onCreatedContext.userFunc0x250e398 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.onCreatedContext.userFunc0x1e58838 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Ob = eventsFunctionContext.getObjects("Object")[0];
 const BeN = eventsFunctionContext.getBehaviorName("Behavior");
@@ -428,7 +428,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 {
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.onCreatedContext.userFunc0x250e398(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.onCreatedContext.userFunc0x1e58838(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -636,7 +636,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isReadyContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isReadyContext.userFunc0x250e470 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isReadyContext.userFunc0x1e52b98 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Ob = eventsFunctionContext.getObjects("Object")[0];
 const BeN = eventsFunctionContext.getBehaviorName("Behavior");
@@ -649,7 +649,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 {
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isReadyContext.userFunc0x250e470(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isReadyContext.userFunc0x1e52b98(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -735,7 +735,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isDoneContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isDoneContext.userFunc0x11872f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isDoneContext.userFunc0x1e52788 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Ob = eventsFunctionContext.getObjects("Object")[0];
 const BeN = eventsFunctionContext.getBehaviorName("Behavior");
@@ -748,7 +748,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 {
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isDoneContext.userFunc0x11872f8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.isDoneContext.userFunc0x1e52788(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -834,7 +834,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.AddCollisionObjectsContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.AddCollisionObjectsContext.userFunc0x250e470 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.AddCollisionObjectsContext.userFunc0x1e527d8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Ob = eventsFunctionContext.getObjects("Object")[0];
 const BeN = eventsFunctionContext.getBehaviorName("Behavior");
@@ -910,7 +910,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 {
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.AddCollisionObjectsContext.userFunc0x250e470(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.AddCollisionObjectsContext.userFunc0x1e527d8(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -996,7 +996,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.GenerateCollisionContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.GenerateCollisionContext.userFunc0xbf3940 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.GenerateCollisionContext.userFunc0x1e2c410 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Ob = eventsFunctionContext.getObjects("Object")[0];
 const BeN = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1072,7 +1072,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 {
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.GenerateCollisionContext.userFunc0xbf3940(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.GenerateCollisionContext.userFunc0x1e2c410(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -1158,7 +1158,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileCollisionNameContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileCollisionNameContext.userFunc0x22380f8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileCollisionNameContext.userFunc0x1e58ab8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Ob = eventsFunctionContext.getObjects("Object")[0];
 const BeN = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1194,7 +1194,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 {
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileCollisionNameContext.userFunc0x22380f8(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileCollisionNameContext.userFunc0x1e58ab8(runtimeScene, eventsFunctionContext);
 
 }
 
@@ -1283,7 +1283,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileIDContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileIDContext.userFunc0xa0b230 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileIDContext.userFunc0x1e2c428 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const Ob = eventsFunctionContext.getObjects("Object")[0];
 const BeN = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1319,7 +1319,7 @@ gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapColl
 {
 
 
-gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileIDContext.userFunc0xa0b230(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__AddTilemapCollisionsExtension__AddTilemapCollisions.AddTilemapCollisions.prototype.TileIDContext.userFunc0x1e2c428(runtimeScene, eventsFunctionContext);
 
 }
 
