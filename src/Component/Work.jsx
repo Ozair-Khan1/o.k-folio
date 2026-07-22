@@ -56,6 +56,42 @@ export const Work = () => {
             techStack: 'Godot Engine, GDScript',
             highlight: "A top-down, arena-survival game featuring wave-based combat. Built with Godot, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
         },
+        {
+            image: '/assets/RoadCross img.png',
+            link: '/assets/RoadCross/index.html',
+            title: 'ANF Road Crossing Game',
+            text: 'ANF Road Cross | GDevelop',
+            overview: 'A fast-paced, top-down 2D wave survival shooter.',
+            techStack: 'GDevelop Engine',
+            highlight: "A top-down, arena-survival game featuring wave-based combat. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+        },
+        {
+            image: '/assets/SaveTheCat img.png',
+            link: '/assets/Save The Cat/index.html',
+            title: 'Save The Cat',
+            text: 'Save The Cat | GDevelop',
+            overview: 'A fast-paced, top-down 2D wave survival shooter.',
+            techStack: 'GDevelop Engine',
+            highlight: "A top-down, arena-survival game featuring wave-based combat. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+        },
+        {
+            image: '/assets/ParkingJam img.png',
+            link: '/assets/ParkingJam/index.html',
+            title: 'Parking Jam',
+            text: 'Parking Jam | GDevelop',
+            overview: 'A fast-paced, top-down 2D wave survival shooter.',
+            techStack: 'GDevelop Engine',
+            highlight: "A top-down, arena-survival game featuring wave-based combat. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+        },
+        {
+            image: '/assets/TheEscape img.png',
+            link: '/assets/TheEscape/index.html',
+            title: 'The Escape',
+            text: 'The Escape | GDevelop',
+            overview: 'A 2D platformer game.',
+            techStack: 'GDevelop Engine',
+            highlight: "A 2D platformer game. Built with GDevelop, this project showcases advanced logic handling, including enemy AI pathfinding, real-time collision detection, and dynamic UI state management for health and scoring."
+        },
     ];
 
 

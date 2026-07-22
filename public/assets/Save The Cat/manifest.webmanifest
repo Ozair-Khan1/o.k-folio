@@ -1,0 +1,12 @@
+{
+  "name": "Loyal Caption (Save the Caty)",
+  "short_name": "Loyal Caption (Save the Caty)",
+  "id": "com.example.game",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
