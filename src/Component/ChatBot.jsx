@@ -6,7 +6,7 @@ export default function ChatBot() {
     const [messages, setMessages] = useState([
         {
             role: 'assistant',
-            content: "Hi! I'm Ozair's AI assistant. Ask me about skills, projects, or how to contact him.",
+            content: "Hi! I'm Ozair's AI assistant. Ask me about skills, projects, or contact details. I can also share his website links like Glimpse, Starbucks Clone, and Prime Inspire.",
         },
     ]);
     const [input, setInput] = useState('');
@@ -15,6 +15,7 @@ export default function ChatBot() {
     const bottomRef = useRef(null);
     const quickPrompts = [
         'Show me his game links',
+        'Show me his website links',
         'What are his top skills?',
         'How can I contact him?',
     ];
