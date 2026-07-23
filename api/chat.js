@@ -1,28 +1,3 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import { PDFParse } from 'pdf-parse';
-
-let cachedCvText = null;
-
-async function getCvText() {
-    if (cachedCvText) return cachedCvText;
-
-    try {
-        const cvPath = path.join(process.cwd(), 'public', 'assets', 'Ozair-Khan-CV-V2.pdf');
-        const fileBuffer = fs.readFileSync(cvPath);
-        const parser = new PDFParse({ data: fileBuffer });
-        const data = await parser.getText();
-        await parser.destroy();
-        const cleanText = data?.text?.replace(/\s+/g, ' ').trim();
-
-        cachedCvText = cleanText || 'CV text unavailable.';
-        return cachedCvText;
-    } catch {
-        cachedCvText = 'CV text unavailable.';
-        return cachedCvText;
-    }
-}
-
 function detectReplyLanguage(messages) {
     const latestUser = [...messages].reverse().find((m) => m?.role === 'user' && typeof m?.content === 'string');
     const text = (latestUser?.content || '').trim();
@@ -75,7 +50,7 @@ export default async function handler(req, res) {
     }
 
     try {
-        const cvText = await getCvText();
+        const cvText = `Front End: React, Next JS, JavaScript (ES6+), TypeScript, CSS 3, Tailwind CSS. Ozair Khan. Education. Work Experience. Contact Me. About me. Skills & Expertise. Full Stack & 2D Game Developer. I am a Full-Stack Developer specializing in the MERN stack (MongoDB, Express, React, Node.js) and an avid 2D Game Developer. I bridge the gap between robust backend logic and engaging user interfaces. With hands-on experience building everything from responsive web applications to interactive games in Godot and GDevelop, I am passionate about creating seamless, high-performance digital experiences. +92 335 8180215. ozairk.work@gmail.com. ok-folio.vercel.app. D773, Bhittai Colony, Korangi Crossing, Karachi. Game Dev: Godot, GDevelop 5, Sprite Animation, Game Physics. Tools: Git/GitHub, Vercel, VS Code, Piskel 4, Itch.io. Matriculation. Intermediate - Computer Science (2024 - 2025). Expected 2027. 2D Game Developer, Digital Bee Studio (6 Months): Built three 2D platformer games, built one 3D endless runner game, implemented game physics, implemented sprite animations, developed on GDevelop 5. github.com/Ozair-Khan1. Back End: Node JS, Express, Mongo DB.`;
         const protocol = req.headers['x-forwarded-proto'] || 'https';
         const host = req.headers.host;
         const configuredBaseUrl = process.env.PORTFOLIO_BASE_URL || process.env.VITE_PORTFOLIO_BASE_URL || '';
@@ -161,7 +136,7 @@ export default async function handler(req, res) {
                             '9) Always reply in the same language the user used in their latest message.',
                             '10) If the user mixes languages, reply in the dominant language they used.',
                             `11) For this reply, you must answer in: ${replyLanguage}.`,
-                            '5) When user asks about games, provide real game names and their links from FACTS.',
+                            '11) When user asks about games, provide real game names and their links from FACTS.',
                             '12) For facts that ARE in FACTS, never refuse to share links; answer directly with available links.',
                             '13) Always provide full absolute links (starting with http/https), never relative-only links.',
                             '',
