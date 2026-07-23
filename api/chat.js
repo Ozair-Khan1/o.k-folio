@@ -87,7 +87,7 @@ export default async function handler(req, res) {
             origin ? `- Jolly 2D Pirate Game: ${buildUrl('/assets/Jolly/Jolly-Roger.html?v=1.3')}` : '- Jolly 2D Pirate Game: public link unavailable (set PORTFOLIO_BASE_URL).',
             origin ? `- Brotato 2D Wave Game: ${buildUrl('/assets/Brotato/Brotato.html?v=1.3')}` : '- Brotato 2D Wave Game: public link unavailable (set PORTFOLIO_BASE_URL).',
             origin ? `- ANF Road Crossing Game: ${buildUrl('/assets/RoadCross/index.html')}` : '- ANF Road Crossing Game: public link unavailable (set PORTFOLIO_BASE_URL).',
-            origin ? `- Save The Cat: ${buildUrl('/assets/Save The Cat/index.html')}` : '- Save The Cat: public link unavailable (set PORTFOLIO_BASE_URL).',
+            origin ? `- Save The Cat: ${buildUrl('/assets/SaveTheCat/index.html')}` : '- Save The Cat: public link unavailable (set PORTFOLIO_BASE_URL).',
             origin ? `- Parking Jam: ${buildUrl('/assets/ParkingJam/index.html')}` : '- Parking Jam: public link unavailable (set PORTFOLIO_BASE_URL).',
             origin ? `- The Escape: ${buildUrl('/assets/TheEscape/index.html')}` : '- The Escape: public link unavailable (set PORTFOLIO_BASE_URL).',
             'Primary web stack: React, Next.js, Node.js, Express, MongoDB.',
