@@ -66,7 +66,7 @@ const groqDevApiPlugin = {
       }
 
       try {
-        const cvText = 'Front End: React, Next JS, JavaScript (ES6+), TypeScript, CSS 3, Tailwind CSS. Ozair Khan. Education. Work Experience. Contact Me. About me. Skills & Expertise. Full Stack & 2D Game Developer. I am a Full-Stack Developer specializing in the MERN stack (MongoDB, Express, React, Node.js) and an avid 2D Game Developer. I bridge the gap between robust backend logic and engaging user interfaces. With hands-on experience building everything from responsive web applications to interactive games in Godot and GDevelop, I am passionate about creating seamless, high-performance digital experiences. +92 335 8180215. ozairk.work@gmail.com. ok-folio.vercel.app. D773, Bhittai Colony, Korangi Crossing, Karachi. Game Dev: Godot, GDevelop 5, Sprite Animation, Game Physics. Tools: Git/GitHub, Vercel, VS Code, Piskel 4, Itch.io. Matriculation. Intermediate - Computer Science (2024 - 2025). Expected 2027. 2D Game Developer, Digital Bee Studio (6 Months): Built three 2D platformer games, built one 3D endless runner game, implemented game physics, implemented sprite animations, developed on GDevelop 5. github.com/Ozair-Khan1. Back End: Node JS, Express, Mongo DB.'
+        const cvText = 'Front End: React, Next JS, JavaScript (ES6+), TypeScript, CSS 3, Tailwind CSS. Ozair Khan. Education. Work Experience. Contact Me. About me. Skills & Expertise. Full Stack & 2D Game Developer. I am a Full-Stack Developer specializing in the MERN & PERN stacks (MongoDB, PostgreSQL, Express, React, Node.js) and an avid 2D Game Developer. I bridge the gap between robust backend logic and engaging user interfaces. With hands-on experience building everything from responsive web applications to interactive games in Godot and GDevelop, I am passionate about creating seamless, high-performance digital experiences. +92 335 8180215. ozairk.work@gmail.com. ok-folio.vercel.app. D773, Bhittai Colony, Korangi Crossing, Karachi. Game Dev: Godot, GDevelop 5, Sprite Animation, Game Physics. Tools: Git/GitHub, Vercel, VS Code, Piskel 4, Itch.io. Matriculation. Intermediate - Computer Science (2024 - 2025). Expected 2027. 2D Game Developer, Digital Bee Studio (6 Months): Built three 2D platformer games, built one 3D endless runner game, implemented game physics, implemented sprite animations, developed on GDevelop 5. github.com/Ozair-Khan1. Back End: Node JS, Express, Mongo DB, PostgreSQL.'
         const body = await readJsonBody(req)
         const incomingMessages = Array.isArray(body?.messages) ? body.messages : []
         const sanitizedMessages = incomingMessages
@@ -116,7 +116,7 @@ const groqDevApiPlugin = {
                   'Age: 18',
                   'Gender: Boy (Male)',
                   'Qualification: College 2nd year (Computer Science), FG College.',
-                  'Role: MERN Developer and Game Developer.',
+                  'Role: MERN & PERN Developer and Game Developer.',
                   'Email: ozairk.work@gmail.com',
                   'Phone: +92 335 8180215',
                   'Location: D773, Bhittai Colony, Korangi Crossing, Karachi',
@@ -139,7 +139,7 @@ const groqDevApiPlugin = {
                   `- Save The Cat: ${buildUrl('/assets/Save The Cat/index.html')}`,
                   `- Parking Jam: ${buildUrl('/assets/ParkingJam/index.html')}`,
                   `- The Escape: ${buildUrl('/assets/TheEscape/index.html')}`,
-                  'Primary web stack: React, Next.js, Node.js, Express, MongoDB.',
+                  'Primary web stack: React, Next.js, Node.js, Express, MongoDB, PostgreSQL.',
                   'Game engines used: Godot, GDevelop.',
                   `CV extracted text: ${cvText}`,
                   'Always provide full absolute links (http/https), never relative-only links.',

@@ -32,29 +32,31 @@ export const Home = () => {
 
     const skills = [
         { name: 'React JS', role: 'Front End Dev', year: '2024-Present', icon: '/assets/React-icon.svg.png' },
-        { name: 'Next JS', role: 'UI-Design', year: '2024-Present', icon: (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>) },
+        { name: 'Next JS', role: 'Full Stack FW', year: '2024-Present', icon: (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>) },
         { name: 'Node JS', role: 'Backend Dev', year: '2024-Present', icon: '/assets/nodejs logo.png' },
-        { name: 'Mongo DB', role: 'Database', year: '2024-Present', icon: '/assets/mongoDB logo.png' },
+        { name: 'PostgreSQL', role: 'SQL Database', year: '2024-Present', icon: '/assets/PSQL-Logo.png' },
         { name: 'Godot', role: '2D-Game Dev', year: '2024-Present', icon: '/assets/Godot icon.svg' },
         { name: 'GDevelop', role: 'No-Code Dev', year: '2024-Present', icon: '/assets/Gdevelop icon.jpg' },
     ]
 
     const duplicateSkills = [
         { name: 'React', role: 'Front End Dev', year: '2024-Present', icon: '/assets/React-icon.svg.png' },
-        { name: 'Next JS', role: 'Front End Dev', year: '2024-Present', icon: (<svg className="img-fluid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>) },
-        { name: 'Godot', role: '2D-Game Dev', year: '2024-Present', icon: '/assets/Godot icon.svg' },
-        { name: 'GDevelop', role: 'No-Code Dev', year: '2024-Present', icon: '/assets/Gdevelop icon.jpg' },
+        { name: 'Next JS', role: 'Full Stack FW', year: '2024-Present', icon: (<svg className="img-fluid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="36" height="36"><mask id="m" maskUnits="userSpaceOnUse" style={{ maskType: 'alpha' }}><circle cx="90" cy="90" r="90" fill="black" /></mask><g mask="url(#m)"><circle cx="90" cy="90" fill="black" r="90" /><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#p0)" /><rect x="115" y="54" width="12" height="72" fill="url(#p1)" /></g><defs><linearGradient id="p0" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient><linearGradient id="p1" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stopColor="white" /><stop offset="1" stopColor="white" stopOpacity="0" /></linearGradient></defs></svg>) },
         { name: 'Tailwind CSS', role: 'UI-Design', year: '2024-Present', icon: '/assets/tailwind-logo.svg' },
         { name: 'Bootstrap', role: 'UI-Design', year: '2024-Present', icon: '/assets/Bootstrap icon.png' },
         { name: 'Node JS', role: 'Backend Dev', year: '2024-Present', icon: '/assets/nodejs logo.png' },
         { name: 'Express', role: 'Server', year: '2024-Present', icon: '/assets/express-logo.png' },
-        { name: 'Mongo DB', role: 'Database', year: '2024-Present', icon: '/assets/mongoDB logo.png' },
-        { name: 'TypeScript', role: 'Enhanced JS', year: '2024-Present', icon: '/assets/TypescriptLogo.png' }
+        { name: 'Mongo DB', role: 'NoSQL Database', year: '2024-Present', icon: '/assets/mongoDB logo.png' },
+        { name: 'PostgreSQL', role: 'SQL Database', year: '2024-Present', icon: '/assets/PSQL-Logo.png' },
+        { name: 'TypeScript', role: 'Enhanced JS', year: '2024-Present', icon: '/assets/TypescriptLogo.png' },
+        { name: 'Digital Ocean', role: 'Hosting', year: '2024-Present', icon: '/assets/DO-Logo.png' },
+        { name: 'Godot', role: '2D-Game Dev', year: '2024-Present', icon: '/assets/Godot icon.svg' },
+        { name: 'GDevelop', role: 'No-Code Dev', year: '2024-Present', icon: '/assets/Gdevelop icon.jpg' },
     ]
 
     const whatIDo = [
         {
-            image: '/assets/Code.svg.svg', desc: 'MERN Stack Development'
+            image: '/assets/Code.svg.svg', desc: 'MERN & PERN Stack Development'
         },
         {
             image: '/assets/Responsive img.svg', desc: 'Responsive Website Design'
@@ -121,7 +123,7 @@ export const Home = () => {
                                         <p className="fw-bold">{splitName}</p>
                                     </div>
                                     <div className="card-text mt-2 pe-5">
-                                        <p style={{ color: "rgba(240, 242, 245, 0.7)" }}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                        <p style={{ color: "rgba(240, 242, 245, 0.7)" }}>A <span className="fw-bold text-white">MERN & PERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                     </div>
                                     <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                         <MotionLink to='/Contact' whileHover={{ backgroundColor: "#1A1F2C" }} transition={{ duration: 0 }} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{ backgroundColor: "#0D6EFD" }}>
@@ -238,18 +240,18 @@ export const Home = () => {
                                     <div className="d-flex flex-column flex-grow-1 mt-5">
                                         <div className="row g-4 flex-grow-1">
                                             <div className="col-lg-12 flex-grow-1">
-                                                <motion.div onClick={openStarBucks} className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(1)} onMouseLeave={() => setIsHovering(0)}>
-                                                    <motion.img whileHover={{ scale: 1.1 }} transition={{ type: 'spring' }} src="/assets/StarBucksImg.png" alt="" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
+                                                <motion.div className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(2)} onMouseLeave={() => setIsHovering(0)}>
+                                                    <motion.img onClick={openGlimpse} whileHover={{ scale: 1.1 }} transition={{ type: 'spring' }} src="/assets/Glimpse.png" alt="" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
                                                     {isHovering === 1 && (
-                                                        <button onClick={openStarBucks} className="btn img-btn-2 bg-black rounded-pill text-white project-eye" aria-label="Open Starbucks clone"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></button>
+                                                        <button onClick={openGlimpse} className="btn img-btn-2 bg-black rounded-pill text-white project-eye" aria-label="Open Glimpse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></button>
                                                     )}
                                                 </motion.div>
                                             </div>
                                             <div className="col-lg-12 flex-grow-1">
-                                                <motion.div className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(2)} onMouseLeave={() => setIsHovering(0)}>
-                                                    <motion.img onClick={openGlimpse} whileHover={{ scale: 1.1 }} transition={{ type: 'spring' }} src="/assets/Glimpse.png" alt="" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
+                                                <motion.div onClick={openStarBucks} className="card-img rounded-4 overflow-hidden position-relative p-3 pb-0" style={{ backgroundColor: '#0E1018' }} onMouseEnter={() => setIsHovering(1)} onMouseLeave={() => setIsHovering(0)}>
+                                                    <motion.img whileHover={{ scale: 1.1 }} transition={{ type: 'spring' }} src="/assets/StarBucksImg.png" alt="" className="img-fluid h-100 rounded-3" style={{ cursor: 'pointer' }} />
                                                     {isHovering === 2 && (
-                                                        <button onClick={openGlimpse} className="btn img-btn-2 bg-black rounded-pill text-white project-eye" aria-label="Open Glimpse"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></button>
+                                                        <button onClick={openStarBucks} className="btn img-btn-2 bg-black rounded-pill text-white project-eye" aria-label="Open Starbucks clone"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-eye-icon lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" /><circle cx="12" cy="12" r="3" /></svg></button>
                                                     )}
                                                 </motion.div>
                                             </div>

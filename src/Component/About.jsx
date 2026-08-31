@@ -73,7 +73,7 @@ export const About = () => {
                                                 <p className="fw-bold">{splitName}</p>
                                             </div>
                                             <div className="card-text mt-2 pe-5">
-                                                <p style={{ color: "rgba(240, 242, 245, 0.7)" }}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                                <p style={{ color: "rgba(240, 242, 245, 0.7)" }}>A <span className="fw-bold text-white">MERN & PERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                             </div>
                                             <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                                 <MotionLink to='/Contact' whileHover={{ backgroundColor: "#1A1F2C" }} transition={{ duration: 0 }} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{ backgroundColor: "#0D6EFD" }}>
@@ -119,7 +119,7 @@ export const About = () => {
                                         <div className="info-text">
                                             <h1 className="main-title text-white fw-bold">Hi, This is <span className="text-primary">Ozair Khan</span>
                                                 <br />
-                                                <span className="fs-4">MERN Stack Developer & Game Developer</span>
+                                                <span className="fs-4">MERN & PERN Stack Developer & Game Developer</span>
                                             </h1>
                                             <p className="fw-bold fs-4 text-wrap w-100 m-0" style={{ color: '#f0f2f5b3' }}>I’m a passionate developer building interactive <span className="text-white fw-bolder">Games</span> and modern <span className="text-white fw-bolder">Websites</span>. I turn creative ideas into functional digital experiences, focusing on clean code, performance, and user-friendly design.</p>
                                         </div>
@@ -173,6 +173,9 @@ export const About = () => {
                                                     <img src="/assets/express logo.svg" alt="Vercel" className="" style={{ width: '65px', height: '65px' }} />
                                                 </div>
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px', backgroundColor: '#0E1018' }}>
+                                                    <img src="/assets/PSQL-Logo.png" alt="PSQL" className="" style={{ width: '65px', height: '65px' }} />
+                                                </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px', backgroundColor: '#0E1018' }}>
                                                     <img src="/assets/mongoDB logo.png" alt="Vercel" className="rounded-pill" style={{ width: '48px', height: '48px' }} />
                                                 </div>
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px', backgroundColor: '#0E1018' }}>
@@ -189,6 +192,9 @@ export const About = () => {
                                                 </div>
                                                 <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px', backgroundColor: '#0E1018' }}>
                                                     <img src="/assets/vercel logo 2.png" alt="Vercel" className="rounded-pill" style={{ width: '48px', height: '48px' }} />
+                                                </div>
+                                                <div className="item rounded-4 d-flex align-items-center justify-content-center" style={{ width: '80px', height: '80px', backgroundColor: '#0E1018' }}>
+                                                    <img src="/assets/DO-Logo.png" alt="DigitalOcean" className="rounded-pill" style={{ width: '48px', height: '48px' }} />
                                                 </div>
                                             </div>
                                             <h3 className="text-white mt-5">2D Game Development</h3>

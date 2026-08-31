@@ -161,7 +161,7 @@ export const Work = () => {
                                                 <p className="fw-bold">{splitName}</p>
                                             </div>
                                             <div className="card-text mt-2 pe-5">
-                                                <p style={{ color: "rgba(240, 242, 245, 0.7)" }}>A <span className="fw-bold text-white">MERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
+                                                <p style={{ color: "rgba(240, 242, 245, 0.7)" }}>A <span className="fw-bold text-white">MERN & PERN Stack Developer</span> & <span className="text-white fw-bold">Game Developer</span> passionate about building interactive web and game experiences</p>
                                             </div>
                                             <div className="card-footer p-0 d-flex flex-wrap gap-3">
                                                 <MotionLink to='/Contact' whileHover={{ backgroundColor: "#1A1F2C" }} transition={{ duration: 0 }} className="btn border-0 p-3 rounded-3 d-inline-flex align-items-center gap-2 text-white fw-bold" style={{ backgroundColor: "#0D6EFD" }}>
@@ -206,7 +206,7 @@ export const Work = () => {
                                     <div className="top-info">
                                         <div className="text d-flex flex-column gap-2">
                                             <h1 className="text-white fw-semibold">Check Out My <span className="text-primary">Projects</span></h1>
-                                            <p className="fs-5" style={{ color: 'rgba(240, 242, 245, 0.7)' }}>I am a Web Developer passionate about building robust, end-to-end web applications. I combine my expertise in MERN stack architecture with my game development background to create highly interactive, scalable, and engaging user experiences.</p>
+                                            <p className="fs-5" style={{ color: 'rgba(240, 242, 245, 0.7)' }}>I am a Web Developer passionate about building robust, end-to-end web applications. I combine my expertise in MERN & PERN stack architecture with my game development background to create highly interactive, scalable, and engaging user experiences.</p>
                                         </div>
                                     </div>
                                     <div className="row g-4 mt-2">
