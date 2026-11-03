@@ -214,6 +214,132 @@ export const Work = () => {
                                         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} className="col-lg-12">
                                             <div className="items">
                                                 <div className="image">
+                                                    <img src='/assets/LeBazarDuCinema.png' alt="Image" className="img-fluid rounded-4" />
+                                                </div>
+                                                <div className="text d-flex flex-column flex-lg-row flex-xl-row gap-2 gap-lg-0 gap-xl-0 gap-md-0 justify-content-between p-4">
+                                                    <div className="info d-flex flex-column">
+                                                        <motion.a
+                                                            href='https://lebazarducinema.leomedias.com'
+                                                            target="_blank"
+                                                            className="text-decoration-none fs-4 d-inline-block"
+                                                            initial="rest"
+                                                            whileHover="hover"
+                                                            animate="rest"
+                                                            style={{
+                                                                color: 'rgba(240, 242, 245, 0.7)',
+                                                                position: 'relative',
+                                                                width: 'fit-content'
+                                                            }}
+                                                        >
+                                                            <motion.span
+                                                                variants={{
+                                                                    rest: { color: 'rgba(240, 242, 245, 0.7)', x: 0 },
+                                                                    hover: { color: '#0D6EFD', x: 5 }
+                                                                }}
+                                                                transition={{ duration: 0.3 }}
+                                                                className="fw-semibold">
+                                                                Le Bazar Du Cinema
+                                                            </motion.span>
+
+                                                            <motion.div
+                                                                variants={{
+                                                                    rest: { width: "0%" },
+                                                                    hover: { width: "100%" }
+                                                                }}
+                                                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                                style={{
+                                                                    height: '2px',
+                                                                    background: '#0D6EFD',
+                                                                    position: 'absolute',
+                                                                    bottom: 0,
+                                                                    left: 0
+                                                                }}
+                                                            />
+                                                        </motion.a>
+                                                        <p style={{ color: '#576076' }} className="fw-semibold m-0">Le Bazar Du Cinema | AI-Powered eBay Listing Automation</p>
+                                                        <div className="d-flex flex-column mt-2 gap-2 mb-3 mb-lg-0 mb-xl-0">
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Overview: </span>A full-stack web app built for a movie poster store to automate creating and publishing eBay listings. Instead of manually typing out details for hundreds of posters, the client simply uploads a poster image, and the app identifies the movie, generates the listing details, sets up size variations, and publishes directly to eBay France.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Tech Stack: </span>Next.js, Tailwind CSS, TypeScript, PostgreSQL, OpenAI API, eBay REST APIs.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">AI Poster Recognition: </span>Uses OpenAI to scan uploaded poster images, read the text, and extract the movie title, actors, director, and release year. It automatically writes search-friendly titles in French that stay within eBay's policy.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Automatic Sizes & Pricing: </span>Analyzes image dimensions to detect whether a poster is 2:3 or 3:4 ratio, then automatically creates multi-size options (from 30x40 cm to 90x120 cm) with calculated pricing for each size.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Direct eBay Publishing: </span>Integrates directly with eBay's Inventory and Promotions APIs. Sellers can publish listings live or save them as drafts with one click, while automatically setting up tiered multi-buy discounts (e.g., 20% off 2, 30% off 3).</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Secure Authentication </span>Handles eBay OAuth login, keeping the seller connected securely without having to sign in repeatedly.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="visit w-50 d-inline-flex h-100 justify-content-start justify-content-lg-end justify-content-xl-end">
+                                                        <motion.a href='https://lebazarducinema.leomedias.com' target="_blank" whileHover={{ backgroundColor: '#0D6EFD' }} transition={{ duration: 0 }} className="btn border-0 p-3 text-white text-nowrap" style={{ backgroundColor: '#0E1018' }}>Visit Site
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+                                                        </motion.a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </motion.div>
+                                        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} className="col-lg-12">
+                                            <div className="items">
+                                                <div className="image">
+                                                    <img src='/assets/Singlet.png' alt="Image" className="img-fluid rounded-4" />
+                                                </div>
+                                                <div className="text d-flex flex-column flex-lg-row flex-xl-row gap-2 gap-lg-0 gap-xl-0 gap-md-0 justify-content-between p-4">
+                                                    <div className="info d-flex flex-column">
+                                                        <motion.a
+                                                            href='https://singlet-society.myshopify.com/apps/society/dashboard'
+                                                            target="_blank"
+                                                            className="text-decoration-none fs-4 d-inline-block"
+                                                            initial="rest"
+                                                            whileHover="hover"
+                                                            animate="rest"
+                                                            style={{
+                                                                color: 'rgba(240, 242, 245, 0.7)',
+                                                                position: 'relative',
+                                                                width: 'fit-content'
+                                                            }}
+                                                        >
+                                                            <motion.span
+                                                                variants={{
+                                                                    rest: { color: 'rgba(240, 242, 245, 0.7)', x: 0 },
+                                                                    hover: { color: '#0D6EFD', x: 5 }
+                                                                }}
+                                                                transition={{ duration: 0.3 }}
+                                                                className="fw-semibold">
+                                                                Singlet Society
+                                                            </motion.span>
+
+                                                            <motion.div
+                                                                variants={{
+                                                                    rest: { width: "0%" },
+                                                                    hover: { width: "100%" }
+                                                                }}
+                                                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                                style={{
+                                                                    height: '2px',
+                                                                    background: '#0D6EFD',
+                                                                    position: 'absolute',
+                                                                    bottom: 0,
+                                                                    left: 0
+                                                                }}
+                                                            />
+                                                        </motion.a>
+                                                        <p style={{ color: '#576076' }} className="fw-semibold m-0">Singlet Society | Shopify Store and Shopify Admin App</p>
+                                                        <div className="d-flex flex-column mt-2 gap-2 mb-3 mb-lg-0 mb-xl-0">
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Overview: </span>A full-stack web app and custom Shopify app built for an exclusive athletic membership club. Instead of handling member orders and inventory manually, the app automates monthly credit issuance, lets members customize limited-edition gear in a private "Selection Room," and syncs production data straight to Shopify.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Tech Stack: </span>Next.js, Tailwind CSS, TypeScript, PostgreSQL, Shopify GraphQL API, Klaviyo API, ECA Memberships API</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Monthly Selection Room: </span>A private, time-boxed monthly portal where members spend their subscription credits on exclusive singlet designs. Members can choose custom cuts (Men's, Women's, International) and sizes (XS to 3XL), save drafts to finish later, and lock in their choices before the monthly deadline.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Automated Credit Ledger: </span>Automatically issues credits when a subscription renews and deducts them (oldest credits first) when selections are locked in. The engine prevents over-spending, tracks complete credit history, and manages expiration countdowns.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Shopify & Fulfillment Sync: </span>Integrates directly with Shopify's Admin API and Webhooks to hold fulfillment orders during the selection window and automatically generate consolidated manufacturing reports once the monthly cycle closes.</p>
+                                                            <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Automated Member Notifications: </span>Integrates with Klaviyo to automatically trigger personalized email flows</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="visit w-50 d-inline-flex h-100 justify-content-start justify-content-lg-end justify-content-xl-end">
+                                                        <motion.a href='https://singlet-society.myshopify.com/apps/society/dashboard' target="_blank" whileHover={{ backgroundColor: '#0D6EFD' }} transition={{ duration: 0 }} className="btn border-0 p-3 text-white text-nowrap" style={{ backgroundColor: '#0E1018' }}>Visit Site
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+                                                        </motion.a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </motion.div>
+                                        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1.5 }} className="col-lg-12">
+                                            <div className="items">
+                                                <div className="image">
                                                     <img src='/assets/Glimpse.png' alt="Image" className="img-fluid rounded-4" />
                                                 </div>
                                                 <div className="text d-flex flex-column flex-lg-row flex-xl-row gap-2 gap-lg-0 gap-xl-0 gap-md-0 justify-content-between p-4">
@@ -238,7 +364,7 @@ export const Work = () => {
                                                                 }}
                                                                 transition={{ duration: 0.3 }}
                                                                 className="fw-semibold">
-                                                                Glimpse
+                                                                Glimspe
                                                             </motion.span>
 
                                                             <motion.div
@@ -256,7 +382,7 @@ export const Work = () => {
                                                                 }}
                                                             />
                                                         </motion.a>
-                                                        <p style={{ color: '#576076' }} className="fw-semibold m-0">Glimpse | Full-Stack Pictures Sharing Platform</p>
+                                                        <p style={{ color: '#576076' }} className="fw-semibold m-0">Glimpse | Full-Stack Pictures and Video Sharing Platform</p>
                                                         <div className="d-flex flex-column mt-2 gap-2 mb-3 mb-lg-0 mb-xl-0">
                                                             <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Overview: </span>A sophisticated, full-stack social ecosystem built to facilitate seamless visual storytelling. Glimpse enables users to share media, engage with a dynamic community, and experience real-time social interactions through a high-performance, responsive interface.</p>
                                                             <p className="m-0" style={{ color: 'rgba(240, 242, 245, 0.7)' }}><span className="fw-semibold text-white">Tech Stack: </span>Next JS, Tailwind CSS, Node JS, Express, MongoDB.</p>
