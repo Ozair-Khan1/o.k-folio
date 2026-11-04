@@ -6,7 +6,7 @@ export default function ChatBot() {
     const [messages, setMessages] = useState([
         {
             role: 'assistant',
-            content: "Hi! I'm Ozair's AI assistant. Ask me about skills, projects, or contact details. I can also share his website links like Glimpse, Starbucks Clone, and Prime Inspire.",
+            content: "Hi! I'm Ozair's AI assistant. Ask me about skills, projects, or contact details. I can also share his websites and games links",
         },
     ]);
     const [input, setInput] = useState('');
@@ -93,7 +93,7 @@ export default function ChatBot() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: '#7ab6ff', textDecoration: 'underline', wordBreak: 'break-all' }}
+                    style={{ color: '#93c5fd', textDecoration: 'underline', wordBreak: 'break-all' }}
                 >
                     {linkText}
                 </a>
@@ -122,11 +122,11 @@ export default function ChatBot() {
                         style={{
                             width: isMobile ? 'calc(100vw - 24px)' : 'min(380px, 92vw)',
                             height: isMobile ? 'calc(100vh - 24px)' : 'min(560px, 78vh)',
-                            background: 'linear-gradient(180deg, #121622 0%, #0f111a 100%)',
-                            border: '1px solid rgba(148,163,184,0.2)',
+                            background: 'black',
+                            border: '1px solid rgba(255, 255, 255, 0.12)',
                             borderRadius: 18,
-                            boxShadow: '0 18px 44px rgba(0,0,0,0.55)',
-                            backdropFilter: 'blur(10px)',
+                            boxShadow: '0 20px 50px rgba(0,0,0,0.75)',
+                            backdropFilter: 'blur(16px)',
                             display: 'flex',
                             flexDirection: 'column',
                             overflow: 'hidden',
@@ -135,48 +135,62 @@ export default function ChatBot() {
                         {/* Header */}
                         <div
                             style={{
-                                padding: '14px 14px',
-                                borderBottom: '1px solid rgba(148,163,184,0.16)',
+                                padding: '14px 16px',
+                                borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
                                 display: 'flex',
                                 justifyContent: 'space-between',
                                 alignItems: 'center',
-                                background: 'rgba(22,25,36,0.88)',
+                                background: 'rgba(14, 16, 24)',
                             }}
                         >
-                            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                                 <div
                                     style={{
-                                        width: 30,
-                                        height: 30,
+                                        width: 32,
+                                        height: 32,
                                         borderRadius: 8,
-                                        background: 'linear-gradient(135deg,#3b82f6,#2563eb)',
+                                        background: '#0E1018',
+                                        border: '1px solid rgba(255, 255, 255, 0.15)',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         fontSize: 13,
                                         fontWeight: 700,
                                         color: '#fff',
+                                        boxShadow: '0 2px 6px rgba(0, 0, 0, 0.4)',
                                     }}
                                 >
                                     O.K
                                 </div>
                                 <div>
                                     <strong style={{ color: '#fff', fontSize: 14, lineHeight: 1 }}>Ask about Ozair</strong>
-                                    <div style={{ color: '#94a3b8', fontSize: 11, marginTop: 2 }}>
-                                        <span style={{ color: '#22c55e' }}>●</span> Online assistant
+                                    <div style={{ color: '#8790a7', fontSize: 11, marginTop: 3 }}>
+                                        <span style={{ color: '#22c55e', marginRight: 4 }}>●</span> Online assistant
                                     </div>
                                 </div>
                             </div>
                             <button
                                 onClick={() => setOpen(false)}
-                                style={{ border: 'none', background: 'none', color: '#9ca3af', cursor: 'pointer', fontSize: 18, lineHeight: 1 }}
+                                style={{
+                                    border: 'none',
+                                    background: 'none',
+                                    color: '#8790a7',
+                                    cursor: 'pointer',
+                                    fontSize: 18,
+                                    lineHeight: 1,
+                                    padding: 4,
+                                    transition: 'color 0.15s',
+                                }}
+                                onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
+                                onMouseLeave={(e) => (e.currentTarget.style.color = '#8790a7')}
+                                aria-label="Close chat"
                             >
                                 ✕
                             </button>
                         </div>
 
                         {/* Messages */}
-                        <div style={{ flex: 1, overflowY: 'auto', padding: 14, display: 'flex', flexDirection: 'column', gap: 10, background: 'rgba(9,11,18,0.42)' }}>
+                        <div style={{ flex: 1, overflowY: 'auto', padding: 14, display: 'flex', flexDirection: 'column', gap: 10, background: 'rgba(7, 8, 12, 0.6)' }}>
                             {messages.length === 1 && !loading && (
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                                     {quickPrompts.map((prompt) => (
@@ -184,13 +198,24 @@ export default function ChatBot() {
                                             key={prompt}
                                             onClick={() => sendMessage(prompt)}
                                             style={{
-                                                border: '1px solid rgba(59,130,246,0.35)',
-                                                background: 'rgba(59,130,246,0.14)',
-                                                color: '#bfdbfe',
+                                                border: '1px solid rgba(255, 255, 255, 0.12)',
+                                                background: '#0E1018',
+                                                color: 'rgba(240, 242, 245, 0.85)',
                                                 borderRadius: 999,
-                                                padding: '6px 10px',
+                                                padding: '6px 12px',
                                                 fontSize: 12,
                                                 cursor: 'pointer',
+                                                transition: 'all 0.18s ease',
+                                            }}
+                                            onMouseEnter={(e) => {
+                                                e.currentTarget.style.background = '#1a1d28';
+                                                e.currentTarget.style.color = '#ffffff';
+                                                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.25)';
+                                            }}
+                                            onMouseLeave={(e) => {
+                                                e.currentTarget.style.background = '#0E1018';
+                                                e.currentTarget.style.color = 'rgba(240, 242, 245, 0.85)';
+                                                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
                                             }}
                                         >
                                             {prompt}
@@ -210,14 +235,14 @@ export default function ChatBot() {
                                         <div
                                             style={{
                                                 display: 'inline-block',
-                                                padding: '9px 12px',
+                                                padding: '10px 14px',
                                                 borderRadius: 12,
                                                 fontSize: 13.5,
                                                 lineHeight: 1.5,
-                                                background: m.role === 'user' ? 'linear-gradient(135deg,#3b82f6,#2563eb)' : 'rgba(30,36,54,0.95)',
-                                                color: '#fff',
-                                                border: m.role === 'user' ? 'none' : '1px solid rgba(148,163,184,0.2)',
-                                                boxShadow: m.role === 'user' ? '0 8px 16px rgba(37,99,235,0.24)' : 'none',
+                                                background: m.role === 'user' ? '#1c202d' : '#0E1018',
+                                                color: m.role === 'user' ? '#ffffff' : 'rgba(240, 242, 245, 0.9)',
+                                                border: m.role === 'user' ? '1px solid rgba(255, 255, 255, 0.16)' : '1px solid rgba(255, 255, 255, 0.1)',
+                                                boxShadow: m.role === 'user' ? '0 4px 14px rgba(0, 0, 0, 0.35)' : 'none',
                                             }}
                                         >
                                             {renderMessageContent(m.content)}
@@ -226,7 +251,7 @@ export default function ChatBot() {
                                 </motion.div>
                             ))}
                             {loading && (
-                                <div style={{ color: '#94a3b8', fontSize: 12.5, paddingLeft: 4 }}>
+                                <div style={{ color: '#8790a7', fontSize: 12.5, paddingLeft: 4 }}>
                                     Thinking<span style={{ letterSpacing: 2 }}>...</span>
                                 </div>
                             )}
@@ -234,7 +259,7 @@ export default function ChatBot() {
                         </div>
 
                         {/* Input */}
-                        <div style={{ padding: 10, borderTop: '1px solid rgba(148,163,184,0.16)', display: 'flex', gap: 8, background: 'rgba(22,25,36,0.92)' }}>
+                        <div style={{ padding: 12, borderTop: '1px solid rgba(255, 255, 255, 0.08)', display: 'flex', gap: 8, background: 'rgba(14, 16, 24, 0.95)' }}>
                             <input
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
@@ -247,29 +272,43 @@ export default function ChatBot() {
                                 placeholder="Ask about my work..."
                                 style={{
                                     flex: 1,
-                                    padding: '10px 12px',
-                                    background: '#1b2133',
-                                    border: '1px solid rgba(148,163,184,0.22)',
+                                    padding: '10px 14px',
+                                    background: '#07080b',
+                                    border: '1px solid rgba(255, 255, 255, 0.12)',
                                     borderRadius: 10,
                                     color: '#fff',
                                     fontSize: 13.5,
                                     outline: 'none',
+                                    transition: 'border-color 0.2s',
                                 }}
+                                onFocus={(e) => (e.target.style.borderColor = 'rgba(255, 255, 255, 0.28)')}
+                                onBlur={(e) => (e.target.style.borderColor = 'rgba(255, 255, 255, 0.12)')}
                             />
                             <button
-                                onClick={sendMessage}
+                                onClick={() => sendMessage()}
                                 disabled={loading || !input.trim()}
                                 style={{
                                     minWidth: 74,
-                                    padding: '9px 12px',
-                                    background: 'linear-gradient(135deg,#3b82f6,#2563eb)',
+                                    padding: '9px 14px',
+                                    background: '#0E1018',
                                     color: '#fff',
-                                    border: 'none',
+                                    border: '1px solid rgba(255, 255, 255, 0.15)',
                                     borderRadius: 10,
-                                    cursor: loading ? 'not-allowed' : 'pointer',
+                                    cursor: loading || !input.trim() ? 'not-allowed' : 'pointer',
                                     fontSize: 13.5,
                                     fontWeight: 600,
-                                    opacity: loading || !input.trim() ? 0.6 : 1,
+                                    opacity: loading || !input.trim() ? 0.45 : 1,
+                                    transition: 'all 0.18s ease',
+                                }}
+                                onMouseEnter={(e) => {
+                                    if (!loading && input.trim()) {
+                                        e.currentTarget.style.background = '#1a1d28';
+                                        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.28)';
+                                    }
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.background = '#0E1018';
+                                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
                                 }}
                             >
                                 {loading ? '...' : 'Send'}
@@ -282,7 +321,7 @@ export default function ChatBot() {
                         initial={{ opacity: 0, scale: 0.85 }}
                         animate={{ opacity: 1, scale: 1, y: [0, -6, 0] }}
                         exit={{ opacity: 0, scale: 0.85 }}
-                        whileHover={{ y: -2, boxShadow: '0 12px 28px rgba(37,99,235,0.5)' }}
+                        whileHover={{ y: -2, backgroundColor: '#181b26', borderColor: 'rgba(255, 255, 255, 0.3)', boxShadow: '0 12px 32px rgba(0,0,0,0.7)' }}
                         whileTap={{ scale: 0.96 }}
                         transition={{
                             opacity: { duration: 0.18 },
@@ -294,16 +333,18 @@ export default function ChatBot() {
                             width: isMobile ? 56 : 60,
                             height: isMobile ? 56 : 60,
                             borderRadius: '50%',
-                            background: 'linear-gradient(135deg,#3b82f6,#2563eb)',
+                            background: '#0E1018',
                             color: '#fff',
-                            border: 'none',
+                            border: '1px solid rgba(255, 255, 255, 0.16)',
                             fontSize: isMobile ? 22 : 24,
                             cursor: 'pointer',
-                            boxShadow: '0 8px 24px rgba(37,99,235,0.45)',
+                            boxShadow: '0 8px 24px rgba(0,0,0,0.6)',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
+                            transition: 'background-color 0.2s, border-color 0.2s, box-shadow 0.2s',
                         }}
+                        aria-label="Open chat assistant"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
